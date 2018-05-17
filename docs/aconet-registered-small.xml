@@ -1,0 +1,1845 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<md:EntitiesDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:xrd="http://docs.oasis-open.org/ns/xri/xrd-1.0" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" Name="http://eduid.at/md/aconet-registered.xml" ID="aconet20180502T071010Z" validUntil="2018-05-16T07:10:10Z" cacheDuration="PT12H">
+  <ds:Signature><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ds:Reference URI="#aconet20180502T071010Z"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>xF27cOwlrxlRiGGuqzPkIGACKmo=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>JpxMDT+yh783FVkzkaTz5KOnvVUoldotS0FlSRv1epaFp4SIZHlH50cfd4ipVktsBbhMKii/EmIjf6L4TR7FqxMYEWZ9ra6SnmSP3Ep/zFbTcq9HeIs0XrardEix0SdP8IMnlCLLLZq++iYiIwwXjwhFFjB7GnBhHPpeZKF+krCo19BRG8zCt+0racSRcILsK6hSd/QeunNKw7P1wtSiGsLzY2jU35CfZ54cKmJMCZY7t6066gJT43LXsx2fVGSTweC29YNUySpRLWJtQUIjrEg0EkbA3B9pfi3BhFNw8aR508HQgXkFGcTO0EjuM9Kc+q73r4eddAylYKKlv8O7CQ==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIFGDCCBACgAwIBAgIJAJS+3dUtfj7NMA0GCSqGSIb3DQEBBQUAMIG4MQswCQYD
+VQQGEwJBVDEjMCEGA1UEChMaQUNPbmV0IC8gVW5pdmVyc2l0YWV0IFdpZW4xOTA3
+BgNVBAsTMFplbnRyYWxlciBJbmZvcm1hdGlrZGllbnN0IGRlciBVbml2ZXJzaXRh
+ZXQgV2llbjEkMCIGA1UEAxMbQUNPbmV0IE1ldGFkYXRhIFNpZ25pbmcgS2V5MSMw
+IQYJKoZIhvcNAQkBFhRhYWkuemlkQHVuaXZpZS5hYy5hdDAeFw0wODA1MjkxMjI3
+MjBaFw0xODA1MjcxMjI3MjBaMIG4MQswCQYDVQQGEwJBVDEjMCEGA1UEChMaQUNP
+bmV0IC8gVW5pdmVyc2l0YWV0IFdpZW4xOTA3BgNVBAsTMFplbnRyYWxlciBJbmZv
+cm1hdGlrZGllbnN0IGRlciBVbml2ZXJzaXRhZXQgV2llbjEkMCIGA1UEAxMbQUNP
+bmV0IE1ldGFkYXRhIFNpZ25pbmcgS2V5MSMwIQYJKoZIhvcNAQkBFhRhYWkuemlk
+QHVuaXZpZS5hYy5hdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMEg
+y0tuWObKZqwfH8pEqs1202hLLEf3A9dn6BSA6C8DeT1BMF1lj7JfM18qBcNp1paz
+kSuO2fMI1NUJTuAXGUbfIsedhiV7PUOcYAbOMxP16eoYFAWtIn9j8TlqANlE6lIA
+Y/C+o6FZM+awXomOydgpH70cPkEs5DJvmBLJgHMKcoIWrynw72Ejsbm7mAWnKpMB
+mtCfAJA7oht5H6cnawhOUfCk7fD+uV4nufoPGAlNJqpdbwsw9DuPMuXSuUhw+D4Z
+KRtgQGshojVEe2w0pFRJW97sm8I29AUCPqtIbuDaqXmY02NKU57uaGYUFuPXuDPo
+CiRKElHHiNwkmep0nx8CAwEAAaOCASEwggEdMB0GA1UdDgQWBBRMDvgWXOITq/Y4
+pQcczif+Ly7y4zCB7QYDVR0jBIHlMIHigBRMDvgWXOITq/Y4pQcczif+Ly7y46GB
+vqSBuzCBuDELMAkGA1UEBhMCQVQxIzAhBgNVBAoTGkFDT25ldCAvIFVuaXZlcnNp
+dGFldCBXaWVuMTkwNwYDVQQLEzBaZW50cmFsZXIgSW5mb3JtYXRpa2RpZW5zdCBk
+ZXIgVW5pdmVyc2l0YWV0IFdpZW4xJDAiBgNVBAMTG0FDT25ldCBNZXRhZGF0YSBT
+aWduaW5nIEtleTEjMCEGCSqGSIb3DQEJARYUYWFpLnppZEB1bml2aWUuYWMuYXSC
+CQCUvt3VLX4+zTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQASWCbG
+/jR4a8lxYvRoh+B7KDQa95R4UPnN1A+pIsGcEkYPa8thqpnHH6vCm6VioIc34wfw
+KtruBYVfxrT8Bh7A2kuRCpnXzZtMnFsxRJP5GB28VJc7m7Ev4OjOOVglahPM7xFu
+gVFxsxYimah1JQIMAJPHFYgwhEEPMmuwpCd0S9Lj6yVc0VVW0NBeaqTTBRRAQdKX
+ekwKYe5tVVuZV/zyXDaXJbCVwEz620VQjJ7o0aU06eJ8Sr3Q4DpXz74b/baWOhA9
+3tuzubdIm+mTaEDggMgAV3cZJg+djx2eSmyDQVwxaOZ3ESiR1Gcoz0vCsg8smrZJ
+wM0aEN5quFWfiFFE</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature><md:Extensions>
+    <mdrpi:PublicationInfo publisher="http://eduid.at" creationInstant="2018-05-02T07:10:10Z"/>
+  </md:Extensions>
+  <md:EntityDescriptor entityID="https://idp-test.wu-wien.ac.at/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2012-07-05T10:07:00Z"/>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/hide-from-discovery</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">wu.ac.at</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">Wirtschaftsuniversität Wien (Test)</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">Vienna University of Economics and Business (Test)</mdui:DisplayName>
+          <mdui:Logo width="199" height="109">https://www.wu.ac.at/wu_logo_aconet.png</mdui:Logo>
+          <mdui:Logo width="16" height="16">https://www.wu.ac.at/favicon-16x16.png</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDRDCCAiygAwIBAgIVAJjnqzqR2xUfosNeuAYE9pw7PjwkMA0GCSqGSIb3DQEB
+BQUAMCExHzAdBgNVBAMTFmlkcC10ZXN0Lnd1LXdpZW4uYWMuYXQwHhcNMTIwNzA1
+MDY1MzMwWhcNMzIwNzA1MDY1MzMwWjAhMR8wHQYDVQQDExZpZHAtdGVzdC53dS13
+aWVuLmFjLmF0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlKThRFPo
+XPvrrvCvE72knofv/8f9Eiv2/e7NovsIV7NbhasGqac39/mUTX1bu+PPK/u1p/dL
+k9EaKWe/i00jSVcxyqHRQMR8fRHS3iDxMAlJ1Xa+o1du//6qXqkt8YKsNBqjlh0q
+hnQx1MIH6nWtzAs+I+9rN2df28NIuSlzEaEFavlG7o2KIFpvFbKb/t+mzIQfCuTc
+1STAK0zhu3ziwIWy7IZ9I0gHhjoL7L0mxYqP41eYKKMrXIgnp88Oi4juhbss+Qwf
+WWchhh62UYoKo/Vl/lgq9YP8e0zyhR68yJiQJH0xWJbcej4KWMrWaFdZz5Iw0CWU
+IgISGJSyC73KAQIDAQABo3MwcTBQBgNVHREESTBHghZpZHAtdGVzdC53dS13aWVu
+LmFjLmF0hi1odHRwczovL2lkcC10ZXN0Lnd1LXdpZW4uYWMuYXQvaWRwL3NoaWJi
+b2xldGgwHQYDVR0OBBYEFKd9vpqoLyGy9PTyQqxvqxeSiKhFMA0GCSqGSIb3DQEB
+BQUAA4IBAQAJwpyieRcgVhM40EcqE1CWiQqVDs4vS0XT7TItSYOUGz8yltHIWuD4
+CAcfo6R37Q9ulskcxHVD42V/ELOvMwY0xNUe+MMmUcfa08liEqB1fI8a6+kvPeiF
+RmL8/BZmJK5KffcSGFAzmPWIQmX4DsdR4SJHwTcGuHRfvEd6tpjY28Ra/pEOAeHm
+RUbGWscMaxzibfj3XNJ1zZfPcaYWP7Qfccsfxvpm2qwKf3Wco76grfOD5MnWwA6V
+aFtphGBt3cLHjvd0xx1ccAEiE5d7ig4I28sM4T/c+NX3rpODzSRuwpMvQTRi20FH
+fzRDgxCNr1l6WYSWxgiwZ8/ueVqELMYk
+                    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp-test.wu-wien.ac.at:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp-test.wu-wien.ac.at:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp-test.wu-wien.ac.at/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp-test.wu-wien.ac.at/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp-test.wu-wien.ac.at/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp-test.wu-wien.ac.at/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">wu.ac.at</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDRDCCAiygAwIBAgIVAJjnqzqR2xUfosNeuAYE9pw7PjwkMA0GCSqGSIb3DQEB
+BQUAMCExHzAdBgNVBAMTFmlkcC10ZXN0Lnd1LXdpZW4uYWMuYXQwHhcNMTIwNzA1
+MDY1MzMwWhcNMzIwNzA1MDY1MzMwWjAhMR8wHQYDVQQDExZpZHAtdGVzdC53dS13
+aWVuLmFjLmF0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlKThRFPo
+XPvrrvCvE72knofv/8f9Eiv2/e7NovsIV7NbhasGqac39/mUTX1bu+PPK/u1p/dL
+k9EaKWe/i00jSVcxyqHRQMR8fRHS3iDxMAlJ1Xa+o1du//6qXqkt8YKsNBqjlh0q
+hnQx1MIH6nWtzAs+I+9rN2df28NIuSlzEaEFavlG7o2KIFpvFbKb/t+mzIQfCuTc
+1STAK0zhu3ziwIWy7IZ9I0gHhjoL7L0mxYqP41eYKKMrXIgnp88Oi4juhbss+Qwf
+WWchhh62UYoKo/Vl/lgq9YP8e0zyhR68yJiQJH0xWJbcej4KWMrWaFdZz5Iw0CWU
+IgISGJSyC73KAQIDAQABo3MwcTBQBgNVHREESTBHghZpZHAtdGVzdC53dS13aWVu
+LmFjLmF0hi1odHRwczovL2lkcC10ZXN0Lnd1LXdpZW4uYWMuYXQvaWRwL3NoaWJi
+b2xldGgwHQYDVR0OBBYEFKd9vpqoLyGy9PTyQqxvqxeSiKhFMA0GCSqGSIb3DQEB
+BQUAA4IBAQAJwpyieRcgVhM40EcqE1CWiQqVDs4vS0XT7TItSYOUGz8yltHIWuD4
+CAcfo6R37Q9ulskcxHVD42V/ELOvMwY0xNUe+MMmUcfa08liEqB1fI8a6+kvPeiF
+RmL8/BZmJK5KffcSGFAzmPWIQmX4DsdR4SJHwTcGuHRfvEd6tpjY28Ra/pEOAeHm
+RUbGWscMaxzibfj3XNJ1zZfPcaYWP7Qfccsfxvpm2qwKf3Wco76grfOD5MnWwA6V
+aFtphGBt3cLHjvd0xx1ccAEiE5d7ig4I28sM4T/c+NX3rpODzSRuwpMvQTRi20FH
+fzRDgxCNr1l6WYSWxgiwZ8/ueVqELMYk
+                    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp-test.wu-wien.ac.at:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp-test.wu-wien.ac.at:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">Wirtschaftsuniversität Wien</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">Vienna University of Economics and Business</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">Wirtschaftsuniversität Wien</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">Vienna University of Economics and Business</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.wu.ac.at/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.wu.edu/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>WU</md:GivenName>
+      <md:SurName>Postmaster</md:SurName>
+      <md:EmailAddress>mailto:postmaster@wu.ac.at</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor entityID="https://www.content-select.com/simplesaml/module.php/saml/sp/metadata.php/preselect.media-sp">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2012-07-25T16:06:31Z"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">Preselect.media</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">Preselect.media</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Preselect.media bietet die digitalen Inhalte renommierter deutschsprachiger Verlage an. Über die Plattform Content-Select stehen die Inhalte der Verlage: Campus, Kohlhammer, Beltz, Juventa und Linde international den Hochschulen zur Verfügung.</mdui:Description>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIE6jCCA9KgAwIBAgISESEPGsM9bTbljnovbohqIg9pMA0GCSqGSIb3DQEBCwUA
+MEwxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSIwIAYD
+VQQDExlBbHBoYVNTTCBDQSAtIFNIQTI1NiAtIEcyMB4XDTE1MDYzMDEwMjgyNFoX
+DTE4MDcyNTAyMzk1NlowRDEhMB8GA1UECxMYRG9tYWluIENvbnRyb2wgVmFsaWRh
+dGVkMR8wHQYDVQQDExZ3d3cuY29udGVudC1zZWxlY3QuY29tMIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEAppjg/oUCr41X+SnpPOQEppvFD0u0BYbu1lFO
+1atVj6ZjKtZ1xrupcG1T1DNJqJNC5p2crUc0Cp5DzCG7CMttw0jhLcGpsKDTI4wZ
+sByFqaFyoS2jWH81qAu+zrX+4q5rfVNb7d8GXdfJXb/Z7X0WiQCmo13SVINfYJkp
+8i3Z/VS82Ouiy5jgQ+S2/s2tyZJfFv6fXAV+XgTtGHBDSZ/0mDcTQs7jjan9mlqk
+t35thpO3qd5I3JJOyRNljGwLVz57LE0QL+Q597IGSY6f6yH9xWPKXxg4Cg+XPuBV
++1E/A6RxcTLMFY4RVK7iURKR4zAoBIwHn08rgZm46+lGzA/+hwIDAQABo4IBzDCC
+AcgwDgYDVR0PAQH/BAQDAgWgMEkGA1UdIARCMEAwPgYGZ4EMAQIBMDQwMgYIKwYB
+BQUHAgEWJmh0dHBzOi8vd3d3Lmdsb2JhbHNpZ24uY29tL3JlcG9zaXRvcnkvMDUG
+A1UdEQQuMCyCFnd3dy5jb250ZW50LXNlbGVjdC5jb22CEmNvbnRlbnQtc2VsZWN0
+LmNvbTAJBgNVHRMEAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA+
+BgNVHR8ENzA1MDOgMaAvhi1odHRwOi8vY3JsMi5hbHBoYXNzbC5jb20vZ3MvZ3Nh
+bHBoYXNoYTJnMi5jcmwwgYkGCCsGAQUFBwEBBH0wezBCBggrBgEFBQcwAoY2aHR0
+cDovL3NlY3VyZTIuYWxwaGFzc2wuY29tL2NhY2VydC9nc2FscGhhc2hhMmcycjEu
+Y3J0MDUGCCsGAQUFBzABhilodHRwOi8vb2NzcDIuZ2xvYmFsc2lnbi5jb20vZ3Nh
+bHBoYXNoYTJnMjAdBgNVHQ4EFgQUHy7mhLiIT89n2nwdYoZr+St1whowHwYDVR0j
+BBgwFoAU9c3VPAhQ+WpPOreX2laD5mnSaPcwDQYJKoZIhvcNAQELBQADggEBAJeM
+p7aclDZfLDhlEFlxZHS7QTucdgawWhoqJP1703r/k2iGGz3tlTtl2KdGlEOyAZZR
+4FSL49YgwRcoqxNAEDmqJyIHk50uKKvmy14d+vBnYPH0eIP/sM8HEXMwu8l5MizO
+c7GEa5OsKBTtuWVCg5S6hIhkh3/a9ERHJ9TtkdgLdH8lTnjXkZYebtG/DRFHISet
+kDVCA5f3CI6kCZ4B1L9WTZtMyVRcCQaohIhZlX/GScg/hKzYAfoIgF+xh4tF4eR/
+AzS/XpQF4WUf/ouI5fQUltlaEAZ5usPIIwZnEtAPwLUHcYf25YunEwXemuAruiJF
+5/PPBvHlUV7mPkuhY7A=</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://content-select.com/simplesaml/module.php/saml/sp/saml2-logout.php/preselect.media-sp"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://content-select.com/simplesaml/module.php/saml/sp/saml2-acs.php/preselect.media-sp" index="0"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://content-select.com/simplesaml/module.php/saml/sp/saml2-acs.php/preselect.media-sp" index="2"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">Preselect.media</md:ServiceName>
+        <md:ServiceDescription xml:lang="de">Preselect.media bietet die digitalen Inhalte renommierter deutschsprachiger Verlage an. Über die Plattform Content-Select stehen die Inhalte der Verlage: Campus, Kohlhammer, Beltz, Juventa und Linde international den Hochschulen zur Verfügung.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true">
+          <saml:AttributeValue>urn:mace:dir:entitlement:common-lib-terms</saml:AttributeValue>
+        </md:RequestedAttribute>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">Preselect.media GmbH</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">Preselect.media</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.content-select.com/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Andreas</md:GivenName>
+      <md:SurName>Fürlinger</md:SurName>
+      <md:EmailAddress>mailto:a.fuerlinger@preselect.com</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://imoox.at/shib">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2017-08-30T13:00:00Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps/20140606</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://imoox.at/Shibboleth.sso/Login"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://imoox.at/Shibboleth.sso/Login" index="1"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">iMooX - die österreichische MOOC-Plattform</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">iMooX - the Austrian MOOC platform</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Auf iMooX werden freie Online-Kurse (Massive Open Online Courses) zu unterschiedlichen Themen angeboten, die allen Interessentinnen und Interessenten kostenlos, zeit- und ortsunabhängig zur Verfügung stehen.</mdui:Description>
+          <mdui:Description xml:lang="en">iMooX is a web-based platform offering online courses that are available for free; registration is required. The topics of the courses are very diverse. The platform meets the university challenge of educating the general public.</mdui:Description>
+          <mdui:InformationURL xml:lang="de">https://imoox.at/</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="en">https://imoox.at/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://imoox.at/static/privacypolicy</mdui:PrivacyStatementURL>
+          <mdui:Logo width="395" height="112">https://imoox.at/static/logo.png</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIDGDCCAgCgAwIBAgIJAOuwBioYAgjzMA0GCSqGSIb3DQEBBQUAMCYxJDAiBgNV
+BAMTG2VsLW9sLWh0dHAwMS1wcm9kLnR1Z3Jhei5hdDAeFw0xNjAzMjMxMTMyMzVa
+Fw0yNjAzMjExMTMyMzVaMCYxJDAiBgNVBAMTG2VsLW9sLWh0dHAwMS1wcm9kLnR1
+Z3Jhei5hdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM0P4pi9S5Df
+AN+XuHSfTj0GmdGnhZ+WAXOb9JCdCC3zS4sgwBRefmbtBW9rzDeuaPqGuw37mTf/
+mevklBiNPWQYeyzPMMF9xAoQuEpjQWGUf1qtb+NCyyD12lNXf4+WsPiWgDezy9cP
+imPDun8T5lRWz3eq+rjda9lKM5VHu/R+ggCw/WgXXXWEg4kFnOceRE91vv6cqkhH
+pEVLG+zIAEyDmQ13rwQOfQrMqq+ZZiTJRoPkq1pF7kYZGui9NRpfFDOwbazm2o8A
+LeOjKYrlamqVvz/SzXN7McPl/PuqOBuIa4C0AIWKUte1neWKbiUvNm+Znu6hCFLF
+J0AAdDpgu3UCAwEAAaNJMEcwJgYDVR0RBB8wHYIbZWwtb2wtaHR0cDAxLXByb2Qu
+dHVncmF6LmF0MB0GA1UdDgQWBBSXH/h8ZWGpLGQ/WgECO92M6j+RbTANBgkqhkiG
+9w0BAQUFAAOCAQEAZH2G5Hju/t5LKb40JQfBQLqw4nEDgB/wSgX3ZK+Fvb/l+wC/
+v2mmz1O3Rvl8DMO7xbmq09iQ9WfCbfUsJLJcWn26bBUSCz76IO75fqg6WAsRTXtU
+7D6F3y7ee4CiDdtG5lPsZR/3XvnckxobzpeRKBwmPJGhe+vUb9+monfD8iUXQhyT
+d4KQR75z+NzmYD7BoYqXw3kARqDIVcehwdFwGyZWRpkGNuVax0WPWVOwQGDDJV8f
+y3RhvIPk7FE2UJsOuje+caiyq4o0bhvcY9eHZiUDpD2N1g7u7oZ0m+mvuZKgVf3Y
+5LAhij//O6Q2ofJKlZg1nPNXRwUuatPpe4bqPA==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://imoox.at/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://imoox.at/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://imoox.at/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://imoox.at/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://imoox.at/Shibboleth.sso/SLO/Artifact"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://imoox.at/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://imoox.at/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://imoox.at/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://imoox.at/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">iMooX - die österreichische MOOC-Plattform</md:ServiceName>
+        <md:ServiceName xml:lang="en">iMooX - the Austrian MOOC platform</md:ServiceName>
+        <md:RequestedAttribute isRequired="true" FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute isRequired="true" FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute isRequired="true" FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute isRequired="true" FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">Technische Universität Graz</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">Graz University of Technology</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">Technische Universität Graz</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">Graz University of Technology</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.tugraz.at/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.tugraz.at/en/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>iMooX</md:GivenName>
+      <md:SurName>Tech Team</md:SurName>
+      <md:EmailAddress>mailto:server.vl@tugraz.at</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" entityID="https://shib-dev.cup.cam.ac.uk/shibboleth-sp">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2012-08-17T09:40:45Z"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+      <md:Extensions>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/discovery"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">Cambridge Journals Online (Entwicklungsinstanz)</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">Cambridge Journals Online (Development)</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Cambridge Journals Online provide online publishing worldwide for peer reviewed academic journals and also support the provision of titles from other publishers.</mdui:Description>
+          <mdui:PrivacyStatementURL xml:lang="en">http://journals.cambridge.org/action/privacy</mdui:PrivacyStatementURL>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIEdzCCA1+gAwIBAgIJANIFGZZe9y4BMA0GCSqGSIb3DQEBBQUAMIGDMQswCQYD
+VQQGEwJHQjEQMA4GA1UECBMHRW5nbGFuZDESMBAGA1UEBxMJQ2FtYnJpZGdlMSAw
+HgYDVQQKExdVbml2ZXJzaXR5IG9mIENhbWJyaWRnZTELMAkGA1UECxMCSVQxHzAd
+BgNVBAMTFnNoaWItZGV2LmN1cC5jYW0uYWMudWswHhcNMTIwNzIwMDUyOTUyWhcN
+MTQwNzIwMDUyOTUyWjCBgzELMAkGA1UEBhMCR0IxEDAOBgNVBAgTB0VuZ2xhbmQx
+EjAQBgNVBAcTCUNhbWJyaWRnZTEgMB4GA1UEChMXVW5pdmVyc2l0eSBvZiBDYW1i
+cmlkZ2UxCzAJBgNVBAsTAklUMR8wHQYDVQQDExZzaGliLWRldi5jdXAuY2FtLmFj
+LnVrMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArenGcSB0PTNcWAqr
+QaYzzul6V9x3CdG4Bk/WXbE5PUKgeL+aFfhVK5Vxs2EsvmwIVtW2cmHfrQ+3V3Qk
+8w1D9wOP2usv59p/f1U/5oa1vWJwOnEBTDHXF+IO0rd6NH3YUSyn8zvyb0GD2+kP
+wh/jbsTPgAetT7y/7295w+K0qkyI8RrNXWXVWQ7acAdVyMbPseoCO4byG8PM6FeR
+fV6kZPqaq0Q5QOVAKXmOqxVNqLAeyOD1bPUH1+aB4I21mQq2Q6C/+/8Rku+XF+HE
+wjGCqQEMtiDdMOzARS8CPnTl3iyt89TUHCOjNKX4la7WD1dUTT4fOonYeeOkkGKs
+54gAEwIDAQABo4HrMIHoMB0GA1UdDgQWBBSObeQ4DPDdO7awCjxgmjXsdrCrKjCB
+uAYDVR0jBIGwMIGtgBSObeQ4DPDdO7awCjxgmjXsdrCrKqGBiaSBhjCBgzELMAkG
+A1UEBhMCR0IxEDAOBgNVBAgTB0VuZ2xhbmQxEjAQBgNVBAcTCUNhbWJyaWRnZTEg
+MB4GA1UEChMXVW5pdmVyc2l0eSBvZiBDYW1icmlkZ2UxCzAJBgNVBAsTAklUMR8w
+HQYDVQQDExZzaGliLWRldi5jdXAuY2FtLmFjLnVrggkA0gUZll73LgEwDAYDVR0T
+BAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEARIjXSpEqWyz2urQzsHBLB1dR+EmU
+DKhnSvcKhDL5ewedzESGUtS4SUO2DyBNSiyM3QFHvQLFZ5RmI0JjrLMlOnjXyHKT
+kAwXKmyleh/t7kkHNNs9hT+UDn3ceasfeera8a75d+1VwKphsyIPolvSAi7bCaZi
+UDIIt8EFbNkNddFvLcQNNFVv1+t4KuSolTdUohY1Y0NlQq1G8cBZMYSRiesBxbQW
+1DcKlforczZ/dpd2o33MR2YPr3qxS0td8szGYugzSewgXj59FnC3r8IoWJ6RslHu
+MtsrRLy+kg0zt4x5vEyLh3w3CisnE0are1eDIYYWrFG4UvsieYdCYxZ7DQ==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/Artifact/SOAP" index="0"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/SLO/Artifact"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/NIM/SOAP"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/NIM/Redirect"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/NIM/POST"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/NIM/Artifact"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/SAML/POST" index="5"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://shib-dev.cup.cam.ac.uk/Shibboleth.sso/SAML/Artifact" index="6"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">Cambridge Journals Online (Entwicklungsinstanz)</md:ServiceName>
+        <md:ServiceName xml:lang="en">Cambridge Journals Online - Dev Test SP</md:ServiceName>
+        <md:ServiceDescription xml:lang="en">Cambridge Journals Online provide online publishing worldwide for peer reviewed academic journals and also support the provision of titles from other publishers.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Cambridge University Press</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Cambridge University Press</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.cambridge.org/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Jarvy</md:GivenName>
+      <md:SurName>Alvarez</md:SurName>
+      <md:EmailAddress>mailto:jalvarez@cambridge.org</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Godofredo</md:GivenName>
+      <md:SurName>Avena</md:SurName>
+      <md:EmailAddress>mailto:gavena@cambridge.org</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" entityID="https://shib-test.cup.cam.ac.uk/shibboleth-sp">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2012-08-17T09:40:45Z"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+      <md:Extensions>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/discovery"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">Cambridge Journals Online (Test)</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">Cambridge Journals Online (Test)</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Cambridge Journals Online provide online publishing worldwide for peer reviewed academic journals and also support the provision of titles from other publishers.</mdui:Description>
+          <mdui:PrivacyStatementURL xml:lang="en">http://journals.cambridge.org/action/privacy</mdui:PrivacyStatementURL>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIID7DCCAtSgAwIBAgIQHh8kh6G2vnAVoNwzV7TN9zANBgkqhkiG9w0BAQUFADA8
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMVGhhd3RlLCBJbmMuMRYwFAYDVQQDEw1U
+aGF3dGUgU1NMIENBMB4XDTEyMDIyNDAwMDAwMFoXDTEzMDIyMzIzNTk1OVowgYQx
+CzAJBgNVBAYTAkdCMRAwDgYDVQQIEwdFbmdsYW5kMRIwEAYDVQQHFAlDYW1icmlk
+Z2UxIDAeBgNVBAoUF1VuaXZlcnNpdHkgb2YgQ2FtYnJpZGdlMQswCQYDVQQLFAJJ
+VDEgMB4GA1UEAxQXc2hpYi10ZXN0LmN1cC5jYW0uYWMudWswggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQDICS458YU6gbe463eAm9OdC1mf3nqbNrh9U5hU
+/4A8SOOi1TRdkck4CcQEGrBO8+VC86hCGPuJicKoysCgtPqE0J0FfItH18XDnD8h
+KPSlow+4FE2kRAHiBrgznwegiTuDnhscTmNfdNooGGjVv+6rpdGCjAsTab1tLaeO
+9tfEcfEHPS255AOmNbsSu1zpz1HaH8bvO3n2g/bY2MuZ3MwrjeqGyGXfNO5EJp9l
+jXSSs+47mvWnyeUoDih79LZAyypGPp5n39EHzVwol/IJUMmlsiSWSdMGXWqOMWZs
+abI+yNRHWt1+dkY0rDxlZl+VTTU0NBQLUG52QQ3J7YL4aU6xAgMBAAGjgaAwgZ0w
+DAYDVR0TAQH/BAIwADA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vc3ZyLW92LWNy
+bC50aGF3dGUuY29tL1RoYXd0ZU9WLmNybDAdBgNVHSUEFjAUBggrBgEFBQcDAQYI
+KwYBBQUHAwIwMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzABhhZodHRwOi8vb2Nz
+cC50aGF3dGUuY29tMA0GCSqGSIb3DQEBBQUAA4IBAQBBHhM9a7yswX7qUo5+m6EP
+u07iXizmclO0ZLG8BF/YnZLD9Sq84sW2UoVxAguHZUj9/BIWeQ3GMTw9ZXCLWLyT
+jCBEi/F3ZyghuLQjcxLUAUtB2rVfnt1SaUaYUSUOWYHkNIvBjhhxj92lFqL8pTL/
+8Lgf1DleFTdoHyOQzkAhN52oLuFjTeT2GNLNgzvauY2e05HXOVvdl9x15DmyPUBx
+039ubYVbLY+gq9RSl7HS4IRvYB2kY5oK1UxRSV+G+NLu3g2MC42WD/Hc88E4IOX9
+t0TKfFMfPiR6n8B8+kU/vnjLbsp5VS2pjzh98LNYU5Tr9rDL6EWb63us2TL7z4o5
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/Artifact/SOAP" index="0"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/SLO/Artifact"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/NIM/SOAP"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/NIM/Redirect"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/NIM/POST"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/NIM/Artifact"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/SAML/POST" index="5"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://shib-test.cup.cam.ac.uk/Shibboleth.sso/SAML/Artifact" index="6"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">Cambridge Journals Online (Test)</md:ServiceName>
+        <md:ServiceName xml:lang="en">Cambridge Journals Online - Test Deploy SP</md:ServiceName>
+        <md:ServiceDescription xml:lang="en">Cambridge Journals Online provide online publishing worldwide for peer reviewed academic journals and also support the provision of titles from other publishers.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Cambridge University Press</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Cambridge University Press</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.cambridge.org/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Jarvy</md:GivenName>
+      <md:SurName>Alvarez</md:SurName>
+      <md:EmailAddress>mailto:jalvarez@cambridge.org</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Godofredo</md:GivenName>
+      <md:SurName>Avena</md:SurName>
+      <md:EmailAddress>mailto:gavena@cambridge.org</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor entityID="https://www.tandfonline.com/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2013-03-04T23:47:38Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps/20140606</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">Taylor &amp; Francis Online</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">Taylor &amp; Francis Online</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Taylor &amp; Francis Online is the platform that supports the Library in its mission and puts research first.</mdui:Description>
+          <mdui:InformationURL xml:lang="en">http://www.tandfonline.com/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">http://www.tandfonline.com/page/privacy-policy</mdui:PrivacyStatementURL>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDqzCCApOgAwIBAgIJANqISRj5I/o5MA0GCSqGSIb3DQEBBQUAMIGUMQswCQYD
+VQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UEBxMLU2FudGEgQ2xh
+cmExHTAbBgNVBAoTFEF0eXBvbiBTeXN0ZW1zLCBJbmMuMR0wGwYDVQQLExRBdHlw
+b24gU3lzdGVtcywgSW5jLjEcMBoGA1UEAxMTd3d3LnRhbmRmb25saW5lLmNvbTAe
+Fw0xMTA1MTYyMjMyMDVaFw0yMTA1MTMyMjMyMDVaMIGUMQswCQYDVQQGEwJVUzET
+MBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UEBxMLU2FudGEgQ2xhcmExHTAbBgNV
+BAoTFEF0eXBvbiBTeXN0ZW1zLCBJbmMuMR0wGwYDVQQLExRBdHlwb24gU3lzdGVt
+cywgSW5jLjEcMBoGA1UEAxMTd3d3LnRhbmRmb25saW5lLmNvbTCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBAJJa89UilP8c7Vq18anuueZoEr7wxWrjKhEF
+myWPKYRlg/uU3mOZOKnCoV/rduj7bksVsdks2aCxiVBAnltjyqz3z8U3iFqDFC27
+tKyFXoXpuK0pduAoH2fL0Cd6tPnM+XiE9kneSYC1ymeytyDM2Ud3EZy3v2QlzKdx
+WRnUKrys+QRQ+zT153Ys+94p00y5C9JPB8XQUEV9S0aPLZC+DB2XZIiC4It4rg0r
+vbph1yIUSkOjMyjZRUkCTuvnV00I1DJLQgmPRlMNNLdy6yX49vUqjywpkgu4d+Vl
+sGf0eJZ0F1RU4+LLBQ6fPMN9Iu8ILj0tDawfFl2VPVe751gFwGcCAwEAATANBgkq
+hkiG9w0BAQUFAAOCAQEAWMCs3jqggUbS/LUPwsunITcuBYBgF41ZokxxPRjFxe7n
+bxX+ZoIQbktoCQ+RmMvfEP089YHgjcjdko8PJO+FIyculwRdlcPAlQgIreje6Nua
+KgfqoRJ9vc3tD6at6wrm4FlvMzWvkXG/yBWvCL2e1/3svhVnYmfrr/ANB6lxsqAt
+KoNU7O2uMaby+wpWTLz9cKpt4Petyf+lHcpKDxF3lyfSWU5o35iIrfpYwoQC0CsL
+mOd779TWBDuA6YIRjdasiBZQFrzUSqDtDw1OX5mJpm4lQiHt0uzfXSaEtKAe0hQa
+3c2URAFydZmYT6te+mttBSpYj81lXQP/fmb5TTiaFw==
+          </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.tandfonline.com/action/saml2post" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.tandfonline.com/action/saml2artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://www.tandfonline.com/action/samlACS" index="1"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">Taylor &amp; Francis Online</md:ServiceName>
+        <md:ServiceName xml:lang="en">Taylor &amp; Francis Online</md:ServiceName>
+        <md:ServiceDescription xml:lang="en">Taylor &amp; Francis Online is the platform that supports the Library in its mission and puts research first.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true">
+          <saml:AttributeValue>urn:mace:dir:entitlement:common-lib-terms</saml:AttributeValue>
+        </md:RequestedAttribute>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Informa UK Limited (Taylor &amp; Francis)</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Taylor &amp; Francis</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.tandfonline.com/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>SSO-Support</md:GivenName>
+      <md:EmailAddress>mailto:SSO-Support@atypon.com</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>SSO-Tech</md:GivenName>
+      <md:EmailAddress>mailto:SSO-Tech@atypon.com</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://www.isat-unishop.at/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2015-09-11T15:04:26Z"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://www.isat-unishop.at/Shibboleth.sso/Login"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://www.isat-unishop.at/Shibboleth.sso/Login" index="1"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">u:book-Shop Raiffeisen Informatik</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">u:book-Shop Raiffeisen Informatik</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Der u:book-Shop für Lenovo-Geräte ist während des jeweils aktuellen Verkaufsfensters geöffnet.</mdui:Description>
+          <mdui:Description xml:lang="en">The u:book shop for Lenovo devices is open during the current sales period.</mdui:Description>
+          <mdui:InformationURL xml:lang="de">http://ubook.at/</mdui:InformationURL>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIDKDCCAhCgAwIBAgIJAObkAcwuaxBlMA0GCSqGSIb3DQEBBQUAMB4xHDAaBgNV
+BAMTE3d3dy5pc2F0LXVuaXNob3AuYXQwHhcNMTUwOTA5MTg0MjA1WhcNMTgwOTA4
+MTg0MjA1WjAeMRwwGgYDVQQDExN3d3cuaXNhdC11bmlzaG9wLmF0MIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA40I7cgT2xc0WmxCv9uxiDz8J7Xcld5io
+k3RLLjmBe7OsRgnBEmrik9pmo1UKomlIugOgiTz77pqZYz+7FAeeAppXWfB4Utxh
+jofGl2ZBgkgv/YYfUewW1e4AHZg+rqJaVJmo0mWTD9lJXxrTOTUDpJLrRWJ+x26w
+m8cag+0lj2EnZAB2soKKSpvgJJbDkL+bRJmLdnhla3pAnsvUnBEdoqjgkFzT3cME
+XrL6zfEacCy2XgURPIvChBV+pTif541v3s5x9PcT0zTOnWLr7jI7ERqe5rT41TK/
+BObSZ04yZv9nuHfu57tVoNifau4h7AGy2tHccXgNOIfBR+YmFbavUwIDAQABo2kw
+ZzBGBgNVHREEPzA9ghN3d3cuaXNhdC11bmlzaG9wLmF0hiZodHRwczovL3d3dy5p
+c2F0LXVuaXNob3AuYXQvc2hpYmJvbGV0aDAdBgNVHQ4EFgQUQ1KVVBIwlT6OlwcL
+cQ/eQdGCrWQwDQYJKoZIhvcNAQEFBQADggEBADF5LAQxmLse+v/XLVH/Erg0Dfju
+q+8fmqDp1RMleaDF9hXn1dDi8uUBJShDU3QxiPfp4nuCJLo9G1GUP3L40auIKvDW
+CY003OCZVqohI2x2ji5TU886SksfcJEEMyyOBjv1Q97KX14Ivu2RWxKgy0OrQpVc
+9Pg+9ctm28yidLxaoNVzpfc/ESxKLxKdX1lMo22S1iIv7cHSk3QRhgiF9w5/PPB4
+Do5c8vY1bzpDzXWaDJi2o5Km3ZSsQE9lwu7xOlOPYORPncFDLJ4Mo/afElb0kZOp
+hLKzXhUbbP7SnfuiYD29CrtgAHP9kGUQNaTgvw8fAGlskLFtYA4CcgmRAWA=
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.isat-unishop.at/Shibboleth.sso/Artifact/SOAP" index="0"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.isat-unishop.at/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www.isat-unishop.at/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.isat-unishop.at/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.isat-unishop.at/Shibboleth.sso/SLO/Artifact"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.isat-unishop.at/Shibboleth.sso/SAML2/POST" index="0"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.isat-unishop.at/Shibboleth.sso/SAML2/POST-SimpleSign" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.isat-unishop.at/Shibboleth.sso/SAML2/Artifact" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.isat-unishop.at/Shibboleth.sso/SAML2/ECP" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://www.isat-unishop.at/Shibboleth.sso/SAML/POST" index="4"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://www.isat-unishop.at/Shibboleth.sso/SAML/Artifact" index="5"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">u:book-Shop Raiffeisen Informatik</md:ServiceName>
+        <md:ServiceName xml:lang="en">u:book-Shop Raiffeisen Informatik</md:ServiceName>
+        <md:ServiceDescription xml:lang="de">Der u:book-Shop für Lenovo-Geräte ist während des jeweils aktuellen Verkaufsfensters geöffnet.</md:ServiceDescription>
+        <md:ServiceDescription xml:lang="en">The u:book shop for Lenovo devices is open during the current sales period.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">Raiffeisen Informatik Technical Services GmbH</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">Ri-Services</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.ri-s.at/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Richard</md:GivenName>
+      <md:SurName>Unger</md:SurName>
+      <md:EmailAddress>mailto:runger1@gmail.com</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://www.aco.net/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2015-11-16T21:46:53Z"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://www.aco.net/Shibboleth.sso/Login"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://www.aco.net/Shibboleth.sso/Login" index="1"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">ACOnet Portal</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">ACOnet web portal</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Das Portal bietet ACOnet Teilnehmern Zugriff auf detaillierte Teilnehmerdaten, das eigene Benutzerprofil mit subskribierten Mailinglisten, Informationen zu Arbeitsgruppen, Anmeldungen zu Veranstaltungen, sowie ACOnet Statistiken und einen Netzwerk-Monitor.</mdui:Description>
+          <mdui:Description xml:lang="en">The ACOnet web portal login area offers ACOnet participants access to detailed participant data, the personal user profile and subscribed mailing lists, information about working groups, registration to events, as well as ACOnet statistics and a network monitor.</mdui:Description>
+          <mdui:InformationURL xml:lang="de">https://www.aco.net/webportal.html?L=0</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="en">https://www.aco.net/webportal.html?L=1</mdui:InformationURL>
+          <mdui:Logo width="195" height="94">https://www.aco.net/fileadmin/aconet/Logos/aconetlogo.gif</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIC6DCCAdCgAwIBAgIJAJV5K1befbt5MA0GCSqGSIb3DQEBBQUAMBYxFDASBgNV
+BAMTC3d3dy5hY28ubmV0MB4XDTE1MDcyNzE0MzEwNFoXDTI1MDcyNDE0MzEwNFow
+FjEUMBIGA1UEAxMLd3d3LmFjby5uZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQC7TcUU6FMnDrMlJPZQBoz3qbgOxbmBOhYn7svayAGtexKyLSKhDJTj
+oz28Phk9TEkMp64KQiE7ZSOUGaavAGbfeu/1mv12a1bR474Ic2zSBOM6hIH8R94G
+/XRS0BYG7quAR6pPyqgiLl5tdV3PTIRNWH1uXKJwqXF+UL2jgi66PVpeDvgZ9jjM
+Gwjo7+RhAhknFUAcul9u2IubsZwvvnumKgJkFJ0tXlT/FquRJD6G+jqyG1X5idVL
+32d/pZfv5N7mAIkKhvFhI/7580jnGomc73BWBnT4LTlJ5S8BFfDQtiJOMPV7aI6D
+6UmEfoCQp92E21EyBY81fKJjEFsUTrEbAgMBAAGjOTA3MBYGA1UdEQQPMA2CC3d3
+dy5hY28ubmV0MB0GA1UdDgQWBBSrYquqh+JRlvDEz0F3iPOcia3VhzANBgkqhkiG
+9w0BAQUFAAOCAQEACJPHCFIELcA8pa0BnVQHBxbB0tgL9hLg+HjppzAxXTcC0G52
+CJxRxF78lHrPexXAuIZBudCE2S4CdzLzttr7WvnIGzSFdUHGr5oLbztwO37aW8RL
+WnI2tS3Cxcj83xXYFRCYgUHtWM/mPtTN5dPRO1bpfOSijA79mfMuBCcvPx/xbeCe
+jBjBi+zjbEnMn2HfDMGpw+lzCX0d7/yY8i8Qove8lPZUmr5e9enRJYssN8MlAKIl
+9gdnBw+95zDxPU3IX4kON2SgClYSlwVMSq4xl+eGxhqXFsfaj8ZRxqc1H16m2uQf
+eSglhdFVLug6S50LYCFGBiE9TsTsnuVecbl54g==
+          </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.aco.net/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.aco.net/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.aco.net/Shibboleth.sso/SAML2/ECP" index="3"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">ACOnet Portal</md:ServiceName>
+        <md:ServiceName xml:lang="en">ACOnet web portal</md:ServiceName>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="displayName" Name="urn:oid:2.16.840.1.113730.3.1.241" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">ACOnet</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">ACOnet</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">ACOnet</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">ACOnet</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.aco.net/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.aco.net/?L=1</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>ACOnet</md:GivenName>
+      <md:SurName>Team</md:SurName>
+      <md:EmailAddress>mailto:eduid@aco.net</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>ACOnet</md:GivenName>
+      <md:SurName>Team</md:SurName>
+      <md:EmailAddress>mailto:webmaster@aco.net</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:refeds="http://refeds.org/metadata" entityID="https://idp.fernfh.ac.at/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2017-08-18T11:30:00Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps/20140606</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category-support" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">fernfh.ac.at</shibmd:Scope>
+        <shibmd:Scope regexp="false">mail.fernfh.ac.at</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">Ferdinand Porsche FernFH</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">Ferdinand Porsche FernFH</mdui:DisplayName>
+          <mdui:Logo height="71" width="260">https://idp.fernfh.ac.at/idp/images/fernfh-logo.png</mdui:Logo>
+          <mdui:Logo height="16" width="16">https://idp.fernfh.ac.at/idp/images/favicon-16x16.png</mdui:Logo>
+        </mdui:UIInfo>
+        <mdui:DiscoHints>
+          <mdui:DomainHint>fernfh.ac.at</mdui:DomainHint>
+        </mdui:DiscoHints>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDLDCCAhSgAwIBAgIVAO8xVDmVZZ59fqcUqBBCh2q2ZQkPMA0GCSqGSIb3DQEB
+CwUAMBsxGTAXBgNVBAMMEGlkcC5mZXJuZmguYWMuYXQwHhcNMTcwODEyMTMyOTM1
+WhcNMzcwODEyMTMyOTM1WjAbMRkwFwYDVQQDDBBpZHAuZmVybmZoLmFjLmF0MIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkjnqP3xo+6FdmrMK7pRe329x
+sC9DYFzmnqxn8CxgcYaRPfhtnvLVN1HVP8ukpoJVfHfJbROgxw6x+7LE1rAh5Nli
+eNIhIuVlvr9OyFy7RUYa/2yK0iWVWWt25rj8YAhHlrYHepHIJlQStL0OqmZcBED4
+O88SAfKsd69Sq1s+55klUk5YFK35BrGxDPiEnzRULrnBaAUWLScBoO9UUdU9dogO
+3AwzDsFIMCaKFCQvz9hoFiEuw4FtvHElVEppS94byIs9OFc2XOAlELvpOR3iXb63
+0pLTumW/erA0R76UFOs38+7P7ctynoFbLTVI+gxy1jZswW5b6RW/GFxtWiYwYQID
+AQABo2cwZTAdBgNVHQ4EFgQUhAKfo4LeNDOeLctmQvfZ2ihsWIowRAYDVR0RBD0w
+O4IQaWRwLmZlcm5maC5hYy5hdIYnaHR0cHM6Ly9pZHAuZmVybmZoLmFjLmF0L2lk
+cC9zaGliYm9sZXRoMA0GCSqGSIb3DQEBCwUAA4IBAQB5yhb3mzXsAYPXCk9+URvY
+el9KRpAVINv5MNIC9tzT9VpELueUko6WwVnlwVw4mxO1TDKnhcEIvDrodKADFMxa
+5mC6gjmBPk4CfHivrn2fZ4LRaglATR51gH6nTkWjkvrFepJgcj6Ntpqxhdv0of1C
+ogKMburtMeWrBru8D2j9fSM5W8nNF101KqsHd+Yu8+A7KjmelKaKZGBVdLDtk/bB
+Qd5sH6HFnKojEwITK8uwbC0Lyo1/qZmpOFaTBCSYErxkdQO7Nn3MHkiEDzQVBbor
+md1QL0Ak9wG6IniUQ9wiI8cdLb3C3jYA+B2Q0ht3cDobNGKpVmYwM5MwAXykzqXU
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDLDCCAhSgAwIBAgIVAJqgXz1DZ9MHDABgFj+VDZY65hX+MA0GCSqGSIb3DQEB
+CwUAMBsxGTAXBgNVBAMMEGlkcC5mZXJuZmguYWMuYXQwHhcNMTcwODEyMTMyOTM0
+WhcNMzcwODEyMTMyOTM0WjAbMRkwFwYDVQQDDBBpZHAuZmVybmZoLmFjLmF0MIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYHeBTGXsPxmyG80nIupB4B2
+IfxzrmydIJSKZuIPbe+29pN3wLxaYO7CRDpFivTz0vRwYC6cJtK7Mu/Ags1bTGTG
+WqhCCxm7e2g5oQUZN4bqpOpiUVVhpJN/CqkSvBjJdyAvQe+XN4kIzDDsg/YAOZus
+zES3cZaHuzVw+OQUCLHvVThGJ6TpzBXAFcPjsYqMsI2Ur7TWH2UHIwkWOqlpJOQ9
+IY6s8L2RVa1e5PnO/Ww6wM1QdhwtqAI9++4fh2NAxL29PYjNAjoAd5fTbpLzgexL
+mMYCcbjzxoGL7qHliXo+9MfOiCX9IixwusL0HJx5rz+D4or1aDVKIyPuAu/hUQID
+AQABo2cwZTAdBgNVHQ4EFgQUMIeN2fme2cmkE3znkxNa+C6kxAswRAYDVR0RBD0w
+O4IQaWRwLmZlcm5maC5hYy5hdIYnaHR0cHM6Ly9pZHAuZmVybmZoLmFjLmF0L2lk
+cC9zaGliYm9sZXRoMA0GCSqGSIb3DQEBCwUAA4IBAQCGdjCbH+vowbradUexqKID
+3lKXEfV4MilTKytfxrb/VPToU8TXMJzHxPYWBkSEmVcGiG5kDOZYkDJYqPjE5iMp
+7nBBjWwhbKLREIx3GmTXISQiVjhk05J2lRQXvvhh3Qy7FlRLnmoAiDV+RQCZI7Ea
+rq1rAwWbeM7+ePCWsSQarjxxIxmWUmkUNiJ6qDj7ZuCmJyFVCYUzi259vD/DPP38
+6oKDkeJiHi+/BQEELALbOKy9hW2Yi0BHdws2mjMFDkmxd4ncpKYZvpzeplxQrfJY
+Zh2e0ZQwazcTNjY5oiWLWeqtp1L/0BTanjFxxv/yuro5DmJa28x/J0ScGSpDkIWD
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDLDCCAhSgAwIBAgIVAN82t9BZtaNzGNhr27L31e2wBvjfMA0GCSqGSIb3DQEB
+CwUAMBsxGTAXBgNVBAMMEGlkcC5mZXJuZmguYWMuYXQwHhcNMTcwODEyMTMyOTM0
+WhcNMzcwODEyMTMyOTM0WjAbMRkwFwYDVQQDDBBpZHAuZmVybmZoLmFjLmF0MIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlHMs24pGhGhhr4f5dTvUnyps
+ydkp+rXFuw8FEayKLpb/ZmMhc2zctcEK1ykLA6ARKQzt3uo66/h7rHLu8KEBeQPP
+uNYIy5NFeMWBQrnPz1fH7RABVAWPQVKajHILiq3S5esGjuKPJ55C82/Ics0h5c4A
+Hiapy3ndiRg8RCmiB3tN2VXAiKWKsKPJoAnFfc6HI3KsuwxR7bybAiXCVTado86b
+lYIcHwcOXsHOz3AZW0uvXvaBvV5f+QlElv3BqB95N5XHawMAyQB7rRGHL7dDocKc
+SAG39lzodMJf1C7ucg6QQ73dd6uky6yw7zjULiQzW19WuHEncxETfQN3a5j0PQID
+AQABo2cwZTAdBgNVHQ4EFgQU/4ITe60SxXEV8EUY9AV58uh9pcwwRAYDVR0RBD0w
+O4IQaWRwLmZlcm5maC5hYy5hdIYnaHR0cHM6Ly9pZHAuZmVybmZoLmFjLmF0L2lk
+cC9zaGliYm9sZXRoMA0GCSqGSIb3DQEBCwUAA4IBAQAygDmEis6En6bAwaE5EsAc
+4OV2MOxpVfO7Jdw25PMKipM5aypGilDkfJkZi+ahKY12TR+BpAkupUIUMk6oX6+a
+hQdC6nRYjAqaqtl5W4aAEvxmvAuVYN+k8HSA73cOgR4V7sMYfHYw3iJlYMrpPBW3
+GKYlfFuXVQOCRW9yaNdFgZgvHp1NjKhYLGo3mfXCZpAs03pzn/RlVedxSObHb/q8
+xxG4TblF7UnT7bxfOZfBb91I7zljnqR4LShwRxGAdHdNtWkurTZzIUmEw5TiXFic
+g3ip8dov7R21dakPLFehMhLzv6BMopQZli01LrKP1GkEn0Bh7X0BuFr7bud3i/fZ
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.fernfh.ac.at:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.fernfh.ac.at:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.fernfh.ac.at/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.fernfh.ac.at/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp.fernfh.ac.at/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.fernfh.ac.at/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">fernfh.ac.at</shibmd:Scope>
+        <shibmd:Scope regexp="false">mail.fernfh.ac.at</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDLDCCAhSgAwIBAgIVAO8xVDmVZZ59fqcUqBBCh2q2ZQkPMA0GCSqGSIb3DQEB
+CwUAMBsxGTAXBgNVBAMMEGlkcC5mZXJuZmguYWMuYXQwHhcNMTcwODEyMTMyOTM1
+WhcNMzcwODEyMTMyOTM1WjAbMRkwFwYDVQQDDBBpZHAuZmVybmZoLmFjLmF0MIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkjnqP3xo+6FdmrMK7pRe329x
+sC9DYFzmnqxn8CxgcYaRPfhtnvLVN1HVP8ukpoJVfHfJbROgxw6x+7LE1rAh5Nli
+eNIhIuVlvr9OyFy7RUYa/2yK0iWVWWt25rj8YAhHlrYHepHIJlQStL0OqmZcBED4
+O88SAfKsd69Sq1s+55klUk5YFK35BrGxDPiEnzRULrnBaAUWLScBoO9UUdU9dogO
+3AwzDsFIMCaKFCQvz9hoFiEuw4FtvHElVEppS94byIs9OFc2XOAlELvpOR3iXb63
+0pLTumW/erA0R76UFOs38+7P7ctynoFbLTVI+gxy1jZswW5b6RW/GFxtWiYwYQID
+AQABo2cwZTAdBgNVHQ4EFgQUhAKfo4LeNDOeLctmQvfZ2ihsWIowRAYDVR0RBD0w
+O4IQaWRwLmZlcm5maC5hYy5hdIYnaHR0cHM6Ly9pZHAuZmVybmZoLmFjLmF0L2lk
+cC9zaGliYm9sZXRoMA0GCSqGSIb3DQEBCwUAA4IBAQB5yhb3mzXsAYPXCk9+URvY
+el9KRpAVINv5MNIC9tzT9VpELueUko6WwVnlwVw4mxO1TDKnhcEIvDrodKADFMxa
+5mC6gjmBPk4CfHivrn2fZ4LRaglATR51gH6nTkWjkvrFepJgcj6Ntpqxhdv0of1C
+ogKMburtMeWrBru8D2j9fSM5W8nNF101KqsHd+Yu8+A7KjmelKaKZGBVdLDtk/bB
+Qd5sH6HFnKojEwITK8uwbC0Lyo1/qZmpOFaTBCSYErxkdQO7Nn3MHkiEDzQVBbor
+md1QL0Ak9wG6IniUQ9wiI8cdLb3C3jYA+B2Q0ht3cDobNGKpVmYwM5MwAXykzqXU
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDLDCCAhSgAwIBAgIVAJqgXz1DZ9MHDABgFj+VDZY65hX+MA0GCSqGSIb3DQEB
+CwUAMBsxGTAXBgNVBAMMEGlkcC5mZXJuZmguYWMuYXQwHhcNMTcwODEyMTMyOTM0
+WhcNMzcwODEyMTMyOTM0WjAbMRkwFwYDVQQDDBBpZHAuZmVybmZoLmFjLmF0MIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYHeBTGXsPxmyG80nIupB4B2
+IfxzrmydIJSKZuIPbe+29pN3wLxaYO7CRDpFivTz0vRwYC6cJtK7Mu/Ags1bTGTG
+WqhCCxm7e2g5oQUZN4bqpOpiUVVhpJN/CqkSvBjJdyAvQe+XN4kIzDDsg/YAOZus
+zES3cZaHuzVw+OQUCLHvVThGJ6TpzBXAFcPjsYqMsI2Ur7TWH2UHIwkWOqlpJOQ9
+IY6s8L2RVa1e5PnO/Ww6wM1QdhwtqAI9++4fh2NAxL29PYjNAjoAd5fTbpLzgexL
+mMYCcbjzxoGL7qHliXo+9MfOiCX9IixwusL0HJx5rz+D4or1aDVKIyPuAu/hUQID
+AQABo2cwZTAdBgNVHQ4EFgQUMIeN2fme2cmkE3znkxNa+C6kxAswRAYDVR0RBD0w
+O4IQaWRwLmZlcm5maC5hYy5hdIYnaHR0cHM6Ly9pZHAuZmVybmZoLmFjLmF0L2lk
+cC9zaGliYm9sZXRoMA0GCSqGSIb3DQEBCwUAA4IBAQCGdjCbH+vowbradUexqKID
+3lKXEfV4MilTKytfxrb/VPToU8TXMJzHxPYWBkSEmVcGiG5kDOZYkDJYqPjE5iMp
+7nBBjWwhbKLREIx3GmTXISQiVjhk05J2lRQXvvhh3Qy7FlRLnmoAiDV+RQCZI7Ea
+rq1rAwWbeM7+ePCWsSQarjxxIxmWUmkUNiJ6qDj7ZuCmJyFVCYUzi259vD/DPP38
+6oKDkeJiHi+/BQEELALbOKy9hW2Yi0BHdws2mjMFDkmxd4ncpKYZvpzeplxQrfJY
+Zh2e0ZQwazcTNjY5oiWLWeqtp1L/0BTanjFxxv/yuro5DmJa28x/J0ScGSpDkIWD
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDLDCCAhSgAwIBAgIVAN82t9BZtaNzGNhr27L31e2wBvjfMA0GCSqGSIb3DQEB
+CwUAMBsxGTAXBgNVBAMMEGlkcC5mZXJuZmguYWMuYXQwHhcNMTcwODEyMTMyOTM0
+WhcNMzcwODEyMTMyOTM0WjAbMRkwFwYDVQQDDBBpZHAuZmVybmZoLmFjLmF0MIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlHMs24pGhGhhr4f5dTvUnyps
+ydkp+rXFuw8FEayKLpb/ZmMhc2zctcEK1ykLA6ARKQzt3uo66/h7rHLu8KEBeQPP
+uNYIy5NFeMWBQrnPz1fH7RABVAWPQVKajHILiq3S5esGjuKPJ55C82/Ics0h5c4A
+Hiapy3ndiRg8RCmiB3tN2VXAiKWKsKPJoAnFfc6HI3KsuwxR7bybAiXCVTado86b
+lYIcHwcOXsHOz3AZW0uvXvaBvV5f+QlElv3BqB95N5XHawMAyQB7rRGHL7dDocKc
+SAG39lzodMJf1C7ucg6QQ73dd6uky6yw7zjULiQzW19WuHEncxETfQN3a5j0PQID
+AQABo2cwZTAdBgNVHQ4EFgQU/4ITe60SxXEV8EUY9AV58uh9pcwwRAYDVR0RBD0w
+O4IQaWRwLmZlcm5maC5hYy5hdIYnaHR0cHM6Ly9pZHAuZmVybmZoLmFjLmF0L2lk
+cC9zaGliYm9sZXRoMA0GCSqGSIb3DQEBCwUAA4IBAQAygDmEis6En6bAwaE5EsAc
+4OV2MOxpVfO7Jdw25PMKipM5aypGilDkfJkZi+ahKY12TR+BpAkupUIUMk6oX6+a
+hQdC6nRYjAqaqtl5W4aAEvxmvAuVYN+k8HSA73cOgR4V7sMYfHYw3iJlYMrpPBW3
+GKYlfFuXVQOCRW9yaNdFgZgvHp1NjKhYLGo3mfXCZpAs03pzn/RlVedxSObHb/q8
+xxG4TblF7UnT7bxfOZfBb91I7zljnqR4LShwRxGAdHdNtWkurTZzIUmEw5TiXFic
+g3ip8dov7R21dakPLFehMhLzv6BMopQZli01LrKP1GkEn0Bh7X0BuFr7bud3i/fZ
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.fernfh.ac.at:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.fernfh.ac.at:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">FernFH Management &amp; Service GmbH</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">FernFH Management &amp; Service GmbH</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">Ferdinand Porsche FernFH</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">Ferdinand Porsche FernFH</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">https://www.fernfh.ac.at/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">https://www.fernfh.ac.at/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Technical</md:GivenName>
+      <md:SurName>Contact</md:SurName>
+      <md:EmailAddress>mailto:it@fernfh.ac.at</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Support</md:GivenName>
+      <md:SurName>Contact</md:SurName>
+      <md:EmailAddress>mailto:it@fernfh.ac.at</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="other" refeds:contactType="http://refeds.org/metadata/contactType/security">
+      <md:GivenName>Security</md:GivenName>
+      <md:SurName>Contact</md:SurName>
+      <md:EmailAddress>mailto:it@fernfh.ac.at</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" entityID="https://test-sp.asknet.de/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2012-08-29T10:04:20Z"/>
+    </md:Extensions>
+    <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://sp2-stage.asknet.de/Shibboleth.sso/ACOnet-DS" index="4"/>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://sp2-stage.asknet.de/Shibboleth.sso/ACOnet-DS"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">studyhouse.de (Test)</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">studyhouse.de (Test)</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Testinstanz des studyhouse.de Services</mdui:Description>
+          <mdui:Description xml:lang="en">Test instance of the studyhouse.de service</mdui:Description>
+          <mdui:PrivacyStatementURL xml:lang="de">https://www.studyhouse.de/cgi-bin/pages/privacy/ml=DE</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://www.studyhouse.de/cgi-bin/pages/privacy/ml=EN</mdui:PrivacyStatementURL>
+          <mdui:Logo width="175" height="45">https://www.studyhouse.de/images/top/XX/logo_main.gif</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIDIDCCAgigAwIBAgIJAKKiND4Xk4aaMA0GCSqGSIb3DQEBBQUAMBwxGjAYBgNV
+BAMTEXRlc3Qtc3AuYXNrbmV0LmRlMB4XDTEyMTEyNzExMzA0M1oXDTE1MDgyNDEx
+MzA0M1owHDEaMBgGA1UEAxMRdGVzdC1zcC5hc2tuZXQuZGUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCqIe3XhX35u2yoV3pFKiR0Hd+7tFff6wpXf0zw
+CYcHWAw+yeRYyKJvksx8C1h8UlLXsFQzVnOOXDC6avuX+JoE/JPY3y21GdJAUELb
+WAaZaLtClSfIf1SKUMoEIlEEK0L36hhNQBQXnSrAEweP4c9roEHJvYKyr57QI0ZA
+fR8pAuoVlRQ5qH+xjJeK/GZT2cJQJcNeIBHRIQF7fJhNkkc7yA9dvDyWehWhhcGc
+KajxrbkN7VVL61w4JQwsIp4ZC/1FuehV4vkhAaTcES/hcSkF7fc1ijK3rRGMd/EU
+qgtCjQDqvIEcSqzQ5DfmzNu6w0sShWp9hODoNXvLgV7TeoV/AgMBAAGjZTBjMEIG
+A1UdEQQ7MDmCEXRlc3Qtc3AuYXNrbmV0LmRlhiRodHRwczovL3Rlc3Qtc3AuYXNr
+bmV0LmRlL3NoaWJib2xldGgwHQYDVR0OBBYEFHS1OPnd73Gzv1sKgHm9ms+hNLn6
+MA0GCSqGSIb3DQEBBQUAA4IBAQBOBKxn5UimmqA1C1lUR1Otzc5IVqlZEqNq6g1l
+OtWvH6omRoWS8XX2iicY1RL4umyGvE64X2x/zku2Vrwt3u8U6xlC7BZo5wqIb4yY
+e2/wgaHa//T6NhN0q9Piecs9Y7J9h6E6zB2p/+rDoEWnxOYu2ewst4dry0FyPQsX
+Z6N4qEFKjIEGaFizgKiVAI6d2CE+j44R2HBNWORRJBZz2uKzkeoj+XhwH2Mv2azX
+LM+hgbDI/9QTzs9leZHgv1/g6R1Q/sgunC/aKy+mKcTC0E6D1k+7LjIcybCXAdm4
+3mBCtYEYIvhj/TNhSgBxneiy1TyHefAMb+WM5O6rFKTSdr0S
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp2-stage.asknet.de/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp2-stage.asknet.de/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp2-stage.asknet.de/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp2-stage.asknet.de/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp2-stage.asknet.de/Shibboleth.sso/SLO/Artifact"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp2-stage.asknet.de/Shibboleth.sso/NIM/SOAP"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp2-stage.asknet.de/Shibboleth.sso/NIM/Redirect"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp2-stage.asknet.de/Shibboleth.sso/NIM/POST"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp2-stage.asknet.de/Shibboleth.sso/NIM/Artifact"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp2-stage.asknet.de/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://sp2-stage.asknet.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp2-stage.asknet.de/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://sp2-stage.asknet.de/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">studyhouse.de (Test)</md:ServiceName>
+        <md:ServiceName xml:lang="en">studyhouse.de (test)</md:ServiceName>
+        <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">asknet AG Electronic Business Solutions</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">asknet</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.asknet.com/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="de">http://www.asknet.de/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Daniel</md:GivenName>
+      <md:SurName>Dietze</md:SurName>
+      <md:EmailAddress>mailto:shibboleth@asknet.de</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Shibboleth</md:GivenName>
+      <md:SurName>Technical Support</md:SurName>
+      <md:EmailAddress>mailto:shibboleth-adm@asknet.de</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" entityID="https://sp2.asknet.de/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2012-08-29T10:04:20Z"/>
+    </md:Extensions>
+    <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://sp2.asknet.de/Shibboleth.sso/ACOnet-DS" index="2"/>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://sp2.asknet.de/Shibboleth.sso/ACOnet-DS"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">studyhouse.de</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">studyhouse.de</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Über studyhouse.de erhalten speziell Studierende ein umfassendes Angebot an Software zu besonders günstigen Sonderkonditionen. Ein Großteil der Produkte kann sofort nach der Bestellung auf den eigenen Rechner heruntergeladen und genutzt werden.</mdui:Description>
+          <mdui:Description xml:lang="en">Via studyhouse.de students can obtain a comprehensive offer of software to particularly favorable conditions. The majority of products can be downloaded and used instantlty after order.</mdui:Description>
+          <mdui:PrivacyStatementURL xml:lang="de">https://www.studyhouse.de/cgi-bin/pages/privacy/ml=DE</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://www.studyhouse.de/cgi-bin/pages/privacy/ml=EN</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="de">https://www.studyhouse.de/</mdui:InformationURL>
+          <mdui:Logo width="175" height="45">https://www.studyhouse.de/images/top/XX/logo_main.gif</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIDEDCCAfigAwIBAgIJAOXssyJJYzG/MA0GCSqGSIb3DQEBCwUAMBgxFjAUBgNV
+BAMMDXNwMi5hc2tuZXQuZGUwHhcNMTcwNDI0MTI0MTA4WhcNMjAwNDE4MTI0MTA4
+WjAYMRYwFAYDVQQDDA1zcDIuYXNrbmV0LmRlMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEAyHC1mVH4oRTUpHB1V58LN1L4+isBr/2FfP12vLraZE0ZnE51
+0pB8XF9Pyl35gkIrVgbgZ21Uu5JbCBQfUVYTzurRtePG3bV3CGrRtH622TYQ9xcr
+DdpH/4yyLG8vRsDKXPTTTAOqQNcyawXLD/cld0eiTbN86wVLLmCsSAMzokHALVwP
+hWOjOk+UgyDV7r5ZMHzz3VS0VCT5wQqtX/6imQ3MTMxvRqIBBovZ7gaclcODlNQA
+PYZLoJvuEwDVyqdE/Qpi9oHcvtv5qbpGU5LMHtIMyxVLaY9JEpuABkDHEI2XcRC2
++gR9XkhNQRKKbHTv8OlhcTnMbrMLkkSyH7dmmQIDAQABo10wWzAdBgNVHQ4EFgQU
+QQ5hlTyYUakqvE4gc0Q7jzVL9fQwOgYDVR0RBDMwMYINc3AyLmFza25ldC5kZYYg
+aHR0cHM6Ly9zcDIuYXNrbmV0LmRlL3NoaWJib2xldGgwDQYJKoZIhvcNAQELBQAD
+ggEBADcLlskkDGowxGz7cVIR1GQMI96rxShZPD0kvjUOfrugPkjfMpb0YK8csuhB
+qRmU6nRSBgJsLqEBaEdo5yVrVnUxMXguNxJT3XZqdgAmGrj3MP+xBIgIZ09sfgYl
+9OSqdaPBQHqO/x5gjBQSOdUH5v3JO7RFlRICPbNEmW8iK7yI0xpZHS+2d6csKWAl
+kAULxFGepV1a1sXl7pRUxC0A77YpW8pz0xy3wN321f9HyRCy42efSsDD0RWvHQr3
+94q8E+gCwUQUMmpaOBIwf8ejaSS9pIL23RAidnTYdgz06fHq21jCbGz0dFc566d1
+EDk+JRT10P0DPfeYLrJ+eZgvmzU=</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp2.asknet.de/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp2.asknet.de/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp2.asknet.de/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp2.asknet.de/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp2.asknet.de/Shibboleth.sso/SLO/Artifact"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp2.asknet.de/Shibboleth.sso/NIM/SOAP"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp2.asknet.de/Shibboleth.sso/NIM/Redirect"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp2.asknet.de/Shibboleth.sso/NIM/POST"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp2.asknet.de/Shibboleth.sso/NIM/Artifact"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp2.asknet.de/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://sp2.asknet.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp2.asknet.de/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://sp2.asknet.de/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">Über studyhouse.de erhalten speziell Studierende ein umfassendes Angebot an Software zu besonders günstigen Sonderkonditionen. Ein Großteil der Produkte kann sofort nach der Bestellung auf den eigenen Rechner heruntergeladen und genutzt werden.</md:ServiceName>
+        <md:ServiceName xml:lang="en">Via studyhouse.de students can obtain a comprehensive offer of software to particularly favorable conditions. The majority of products can be downloaded and used instantlty after order.</md:ServiceName>
+        <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">asknet AG Electronic Business Solutions</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">asknet</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.asknet.com/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="de">http://www.asknet.de/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Daniel</md:GivenName>
+      <md:SurName>Dietze</md:SurName>
+      <md:EmailAddress>mailto:shibboleth@asknet.de</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Shibboleth</md:GivenName>
+      <md:SurName>Technical Support</md:SurName>
+      <md:EmailAddress>mailto:shibboleth-adm@asknet.de</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://sp-vaas.asknet.de/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2015-04-09T20:08:45Z"/>
+    </md:Extensions>
+    <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://sp-vaas.asknet.de/Shibboleth.sso/ACOnet-DS"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://sp-vaas.asknet.de/Shibboleth.sso/ACOnet-DS" index="3"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">asknet Verify</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">asknet Verify</mdui:DisplayName>
+          <mdui:Description xml:lang="de">asknet Verify ist eine umfassende Plattform für die Verifizierung von Studentennachweisen</mdui:Description>
+          <mdui:Description xml:lang="en">asknet Verify is a comprehensive platform for the verification of international student IDs</mdui:Description>
+          <mdui:PrivacyStatementURL xml:lang="de">https://www.studyhouse.de/cgi-bin/pages/privacy/ml=DE</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://www.studyhouse.de/cgi-bin/pages/privacy/ml=EN</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="en">https://verify-service.com/</mdui:InformationURL>
+          <mdui:Logo width="134" height="70">https://verify-service.com/fileadmin/templates/images/logo_70.png</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIFVDCCBDygAwIBAgIQCjQ5v6FSIBZlOnD4LP6xgDANBgkqhkiG9w0BAQsFADBw
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNz
+dXJhbmNlIFNlcnZlciBDQTAeFw0xNzAxMDMwMDAwMDBaFw0yMDAzMTIxMjAwMDBa
+MG4xCzAJBgNVBAYTAkRFMRswGQYDVQQIExJCYWRlbi1XdWVydHRlbWJlcmcxEjAQ
+BgNVBAcTCUthcmxzcnVoZTESMBAGA1UEChMJYXNrbmV0IEFHMRowGAYDVQQDExFz
+cC12YWFzLmFza25ldC5kZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+ANQAPU42HFq7iWZoOtZUUAnuWZtm70QhGFk+x93cKLOwkgmQ/lvz7C5CLdxszSJQ
+0stTSWqLiQ0ggeB51kFmodVokK9qCqox5DYXkfUMlPmoFuTOJegZi4i+n0sPn99k
+SJieLWGkrgF//7XV/QA3vfnl9z+9Er9ByvU0sM/4WpYGi30uj2KKUjMAPOTpWxdg
+GKmrITM6eEp5oiCra1AGMHlqBaPFJb7Hj95PcDHU//rBNt0pLTYjh6GUzGyTICo2
+UF3zKExuNTUWRq/MijRgwIxjcY+/qNG19Z5MhWwXJSj/+bbWbH33GPB5FfEamn2k
+5oCXyAM2M1AKDWvkRzCry+0CAwEAAaOCAeowggHmMB8GA1UdIwQYMBaAFFFo/5Cv
+Agd1PMzZZWRiohK4WXI7MB0GA1UdDgQWBBQK/8q5RcyIf3zWKWZN90nZ4oGz3zAc
+BgNVHREEFTATghFzcC12YWFzLmFza25ldC5kZTAOBgNVHQ8BAf8EBAMCBaAwHQYD
+VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMHUGA1UdHwRuMGwwNKAyoDCGLmh0
+dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9zaGEyLWhhLXNlcnZlci1nNS5jcmwwNKAy
+oDCGLmh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9zaGEyLWhhLXNlcnZlci1nNS5j
+cmwwTAYDVR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6
+Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwgYMGCCsGAQUFBwEBBHcw
+dTAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tME0GCCsGAQUF
+BzAChkFodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vRGlnaUNlcnRTSEEySGln
+aEFzc3VyYW5jZVNlcnZlckNBLmNydDAMBgNVHRMBAf8EAjAAMA0GCSqGSIb3DQEB
+CwUAA4IBAQApNxP83qvx+mYi1F8JJ2nmErKiGOiiScI9/Rd+yEteZB4+neun4lxu
+iecbMkJ0iP1sZxYOI89Oxy10OLcF/zml4kJ53txF0frCexTh4oQcmqJLh5Tb799/
+OIO89PPuec5BUS8JuVrKoMDox/h7KLxTD3yd456tORwSfIXZuqkvNvc5YR5i7uda
+ej8Zkhp2wfs7skXMZ2ejQ15VSND1tm0E5Y0T6KB5635ycNAGYGOq6PQBw8kc8CoK
+/gtUpqyaaAgcW4eRiFMylD2izyb+TjDuOm6RwcC1DeWNCsXUkk6B6yDDWeoAN7kO
+Oo8CDjKHRe8DgSKtQ5tmEQvHErUhTwBc</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIG7TCCBdWgAwIBAgIQD4nEgeRsmOwtU6PiCE1hojANBgkqhkiG9w0BAQsFADBw
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNz
+dXJhbmNlIFNlcnZlciBDQTAeFw0xMzExMTUwMDAwMDBaFw0xNzAyMDYxMjAwMDBa
+MIGMMQswCQYDVQQGEwJERTEbMBkGA1UECBMSQmFkZW4tV3VlcnR0ZW1iZXJnMRIw
+EAYDVQQHEwlLYXJsc3J1aGUxMDAuBgNVBAoTJ2Fza25ldCBBRyBFbGVjdHJvbmlj
+IEJ1c2luZXNzIFNvbHV0aW9uczEaMBgGA1UEAxMRc3AtdmFhcy5hc2tuZXQuZGUw
+ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7FOI7hULObYu/xEFhdSQ4
+i9a8j1J4QXThvOiphGlBUwEktPLIKTVbIMlRB60mmBfEWZPPj5AmG7FlBZ0PHmMi
+/O2QvimJak9QMshWPmKMYJiWqYgVe+aT181CLJ+6QTdQx9fVF7QbLyIA10D4VaD4
+oCWgirGjxOnyz+YeeD4w1rS8vPiVlRzOAqMQD/t8NA381rTHHpGIGnAMjDtkxJf3
+L6HEyWa/q3wp4qetToJoAvmJsHNVre+pTS4upjGNh0q9cH72UObdRdr3LgBO6w4y
+zW4Mqy+Uaxk7Ktx0C3Jnhb7GGyVrudqokpK8+mjWV3oifpRnP1r/syUWdj++jaKv
+AgMBAAGjggNkMIIDYDAfBgNVHSMEGDAWgBRRaP+QrwIHdTzM2WVkYqISuFlyOzAd
+BgNVHQ4EFgQUUw+pxg5pV4/CeKtrRT13zUckz1IwHAYDVR0RBBUwE4IRc3AtdmFh
+cy5hc2tuZXQuZGUwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMB
+BggrBgEFBQcDAjB1BgNVHR8EbjBsMDSgMqAwhi5odHRwOi8vY3JsMy5kaWdpY2Vy
+dC5jb20vc2hhMi1oYS1zZXJ2ZXItZzEuY3JsMDSgMqAwhi5odHRwOi8vY3JsNC5k
+aWdpY2VydC5jb20vc2hhMi1oYS1zZXJ2ZXItZzEuY3JsMIIBxAYDVR0gBIIBuzCC
+AbcwggGzBglghkgBhv1sAQEwggGkMDoGCCsGAQUFBwIBFi5odHRwOi8vd3d3LmRp
+Z2ljZXJ0LmNvbS9zc2wtY3BzLXJlcG9zaXRvcnkuaHRtMIIBZAYIKwYBBQUHAgIw
+ggFWHoIBUgBBAG4AeQAgAHUAcwBlACAAbwBmACAAdABoAGkAcwAgAEMAZQByAHQA
+aQBmAGkAYwBhAHQAZQAgAGMAbwBuAHMAdABpAHQAdQB0AGUAcwAgAGEAYwBjAGUA
+cAB0AGEAbgBjAGUAIABvAGYAIAB0AGgAZQAgAEQAaQBnAGkAQwBlAHIAdAAgAEMA
+UAAvAEMAUABTACAAYQBuAGQAIAB0AGgAZQAgAFIAZQBsAHkAaQBuAGcAIABQAGEA
+cgB0AHkAIABBAGcAcgBlAGUAbQBlAG4AdAAgAHcAaABpAGMAaAAgAGwAaQBtAGkA
+dAAgAGwAaQBhAGIAaQBsAGkAdAB5ACAAYQBuAGQAIABhAHIAZQAgAGkAbgBjAG8A
+cgBwAG8AcgBhAHQAZQBkACAAaABlAHIAZQBpAG4AIABiAHkAIAByAGUAZgBlAHIA
+ZQBuAGMAZQAuMIGDBggrBgEFBQcBAQR3MHUwJAYIKwYBBQUHMAGGGGh0dHA6Ly9v
+Y3NwLmRpZ2ljZXJ0LmNvbTBNBggrBgEFBQcwAoZBaHR0cDovL2NhY2VydHMuZGln
+aWNlcnQuY29tL0RpZ2lDZXJ0U0hBMkhpZ2hBc3N1cmFuY2VTZXJ2ZXJDQS5jcnQw
+DAYDVR0TAQH/BAIwADANBgkqhkiG9w0BAQsFAAOCAQEAcPLbkkc6ZwQ3yZ/eMhv9
+lf+t1INM3EVH84E5t9JUngrP3Aa4oIT8pLBc2ScG2akiQuuGaHOSawWE5CqAz96h
+qXLaMlzTpM3QvnDT2aFlZEyQxvOoV7DBkUGTqsQ39q9+YCJ48ylElOBsRz2zNprq
+CzO6+Q/Ep1EHqMmhRhlWTlCi10ZYEsjijfDtgLq4nFnWNzgPCMW/tHC1LDXff19Y
+Pjn/JopzFC43wSaIoE/0nF1qNmH+USiNwysD5UFGw9gbpEWpEFpAkyStA8LaBdfZ
+3U3q/8D8VI1sOVcxjAGhLccii2RdkSC2MwUSbNqQjs84wa0hiKW1WsJVyYwCN5u4
+bw==</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp-vaas.asknet.de/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp-vaas.asknet.de/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp-vaas.asknet.de/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp-vaas.asknet.de/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp-vaas.asknet.de/Shibboleth.sso/SLO/Artifact"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp-vaas.asknet.de/Shibboleth.sso/NIM/SOAP"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp-vaas.asknet.de/Shibboleth.sso/NIM/Redirect"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp-vaas.asknet.de/Shibboleth.sso/NIM/POST"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp-vaas.asknet.de/Shibboleth.sso/NIM/Artifact"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp-vaas.asknet.de/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://sp-vaas.asknet.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp-vaas.asknet.de/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://sp-vaas.asknet.de/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">asknet Verify</md:ServiceName>
+        <md:ServiceName xml:lang="en">asknet Verify</md:ServiceName>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="schacHomeOrganizationType" Name="urn:oid:1.3.6.1.4.1.25178.1.2.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">asknet AG Electronic Business Solutions</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">asknet</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.asknet.com/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="de">http://www.asknet.de/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Daniel</md:GivenName>
+      <md:SurName>Dietze</md:SurName>
+      <md:EmailAddress>mailto:shibboleth@asknet.de</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Shibboleth</md:GivenName>
+      <md:SurName>Technical Support</md:SurName>
+      <md:EmailAddress>mailto:shibboleth-adm@asknet.de</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor entityID="https://login.fh-campuswien.ac.at/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2016-06-02T12:00:00Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps/20140606</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">fh-campuswien.ac.at</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">FH Campus Wien</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">FH Campus Wien - University of Applied Sciences</mdui:DisplayName>
+          <mdui:InformationURL xml:lang="de">https://www.fh-campuswien.ac.at/</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="en">https://www.fh-campuswien.ac.at/en.html</mdui:InformationURL>
+          <mdui:Logo width="179" height="81">https://portal.fh-campuswien.ac.at/images/shibboleth/logo.png</mdui:Logo>
+          <mdui:Logo width="16" height="16">https://www.fh-campuswien.ac.at/favicon.ico</mdui:Logo>
+        </mdui:UIInfo>
+        <mdui:DiscoHints>
+          <mdui:DomainHint>fh-campuswien.ac.at</mdui:DomainHint>
+        </mdui:DiscoHints>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDTDCCAjSgAwIBAgIVALtvU0i3lZ3AL8eceJEVN4kfwxm2MA0GCSqGSIb3DQEB
+CwUAMCMxITAfBgNVBAMMGHNzbzQuZmgtY2FtcHVzd2llbi5hYy5hdDAeFw0xNjAx
+MjYxMDQwNDdaFw0zNjAxMjYxMDQwNDdaMCMxITAfBgNVBAMMGHNzbzQuZmgtY2Ft
+cHVzd2llbi5hYy5hdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJds
+gH+rTJ/Abb4m300cNxzqP5Zav4bmtxQnMNu8LlsJQWANnzTlf54+vz5H4Pr1msMF
+9EhruaxS4aJ8cc/XdyfzwpmspiDob8nudElzwwoaMpnWwQJH7vTbUgI4XUdyOEYX
+pzPrPhU5jxJHBg7PrW/unnK7GWUfHZrfvVwD8uYpCuaY6/ZXtfSKQ/E9yLLgH9qs
+3UAu4AJQcTxGMFT/ZdBh1RKVApDnD5J2lHwUKBGuDj+6zfudKYSDETF/xNFaMYPY
+V9UZa7K+Y4tEI0KZ5n1SELAFmd9wH9YPqsZjLhYQzLnmZRD1Bqj8kBLuuZfMERu8
+7nEi36n9Dxg0jhxMbuUCAwEAAaN3MHUwHQYDVR0OBBYEFGDVJplHZZhsGp2Pyxae
+HWvXitj4MFQGA1UdEQRNMEuCGHNzbzQuZmgtY2FtcHVzd2llbi5hYy5hdIYvaHR0
+cHM6Ly9zc280LmZoLWNhbXB1c3dpZW4uYWMuYXQvaWRwL3NoaWJib2xldGgwDQYJ
+KoZIhvcNAQELBQADggEBAF39O9gEflyUL0aCilUW/+ami7A9wKGtwwK3joiv0vMZ
+vicSnHBMZ4Mw1JjRl0DN6e6C+i6bv19f+tfihvOxTgQE+xGvhV6USnN1pWeOBQa9
+rZ2G3rlHaU+y2qqVLykHqhbEZ3uPnMIWPxU8ovIFbwUoUTyppBsMWtMQJfgocX19
+GbYbsJTmAouCH2U4cvSqClokeVdJtuIOctJbnss3B6CTL4Ys5ahQhOrf/PjoE3Pr
+nypHg4PM/qN7QCtsi8Xhs+bhk6WnYrwA9fVxZTbOg3pc+9b+pduUZWzoLn8AyL+3
+Pdj8I4ZIzP8Qjmqgl2wCQPedDSVGzzEWuMvzC1HVvro=</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDSzCCAjOgAwIBAgIUQ6Rk/nUgb2A6oHioG212mG/0tAgwDQYJKoZIhvcNAQEL
+BQAwIzEhMB8GA1UEAwwYc3NvNC5maC1jYW1wdXN3aWVuLmFjLmF0MB4XDTE2MDEy
+NjEwNDA0NloXDTM2MDEyNjEwNDA0NlowIzEhMB8GA1UEAwwYc3NvNC5maC1jYW1w
+dXN3aWVuLmFjLmF0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA76mk
+STIc4sT6y9Cn+9BTJnvy0lTVWu1vgeh3/ZfIg3Smw/vvrQ/SZWJR3jL82AEgqbja
+3y24Yw7SVpXsPaWyxTk5DbxObZ4WiVL1VbQyb9h+J+Ti+Z4gfT02FIUyCCNzq05J
+CJkMcbd18FR7gl5McGOZEla36jNzwFz31jzVSat65AT9T/RB/sSI7G+1/OdRjisa
+12/QEfy3uj4FY8jGf/eXtLO8k2UblfdAwLbkmdr/0oJesqVmj3ub2+F1Pn9Hy9bl
+r5wuwhZYXP1BXmFTP7S87y88l5MFSNxarbsEmIrFXYePcychZmIr3iyW8O8ukX/Z
+OJMG4K47VVwRSI9AgQIDAQABo3cwdTAdBgNVHQ4EFgQUgTEVM2ltdz0FUJuKjuUb
+6tqgqsgwVAYDVR0RBE0wS4IYc3NvNC5maC1jYW1wdXN3aWVuLmFjLmF0hi9odHRw
+czovL3NzbzQuZmgtY2FtcHVzd2llbi5hYy5hdC9pZHAvc2hpYmJvbGV0aDANBgkq
+hkiG9w0BAQsFAAOCAQEA0w+gnHDpKqNnW09pI/fFD/ngedsfsYcNZmZunEd3ULwb
+o5SnkYQWqbddjpeJSvxETybZJiqnWEPW1C3jfB34FNGXNGEspCbHtM4e5MA2h0in
+g2w96wmmut+sJRjG5cjbkxWGN4Rk7Wv05VH1hN6o4ZkFTaHzd1su+/T4ETbn9v4a
+mNSlTmndsDZSpv8EnM5/DST1wsX/43ofnK5KpA44ckD8TiN5xiJXipWz2OpjCyRU
+9ZNhpml2BexozSKx+pA3Rpe6NiUJ9Gts0auXv1sfU1wnHeUYIctGlqOFFkZxqk9P
+/+I9UyKZ1gudxH+tu9JyErL156Yfo4/8zQ+6xlv5RA==</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDSzCCAjOgAwIBAgIUHBtdOmz1Z/foyvlRjdgnFuo2ZVwwDQYJKoZIhvcNAQEL
+BQAwIzEhMB8GA1UEAwwYc3NvNC5maC1jYW1wdXN3aWVuLmFjLmF0MB4XDTE2MDEy
+NjEwNDA0N1oXDTM2MDEyNjEwNDA0N1owIzEhMB8GA1UEAwwYc3NvNC5maC1jYW1w
+dXN3aWVuLmFjLmF0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyCcc
+2kDeCpmNGElYkaAZt2fmqYSsAxEdjJNTTB/Ud0uScK5sPFKaa3n1HmqhEPnhg3YI
+chcA8eldNLrImY5kQk27LqzUNw3JpmVu1bX/vLnScOMEsJkCTP2cRRnJrTWTadQV
+/Y8Jz49y3JCas164KlwvGdhUNrNueTX29GuvsNfZ/bjXLcuZvtFVNH7QigaGLK5h
+NYDH9OhcF+3Unym9Ec2DLV5iqBm/6vpenBLPhaGJA1IaUzjKT1A6nfxW4prF79Xn
+qwDv9YLRlbNff2ZoEqiwk06LbeGrJ1L/j7DeG1w7OKv6PNmsJxkR6/XELvTf5/Nl
+HA6zw/295Bn7FAR4awIDAQABo3cwdTAdBgNVHQ4EFgQU3n+4HGnGu4pHTERtukVS
+yXaHmCEwVAYDVR0RBE0wS4IYc3NvNC5maC1jYW1wdXN3aWVuLmFjLmF0hi9odHRw
+czovL3NzbzQuZmgtY2FtcHVzd2llbi5hYy5hdC9pZHAvc2hpYmJvbGV0aDANBgkq
+hkiG9w0BAQsFAAOCAQEAc9NwsCs6WnormcP7pNkGVAysdUOhPItshQ7GQeP62Vu/
+uTl+6PfWAvXuJ9x2s8EtPKVHCUIe8T0giopWXAFchviZ2AfSpASdwScsl6B7pUwa
+4QER7PX+ubyuXmXwmzVcIsqTZdpI/mL4Qu/rlFj3AMbC9JtsHNQ5mR3iuMtx7VUE
+GuMjLxtlsI/zXv17lBV0ujkrQnzWNQNUkTRyzNZQh1Y+lJs/LxDJkmjZ3goWEcQH
+/XWvQdmaFoK+s1D6Czdz+lQTjz7kh0QKEmjTW6CnpzLFuHSZZ1JABD8dL5kCxJ27
+lvm1jNRwA/x3Tai4xZWCaT/f+BZDqKrzAqveQIJMyA==</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://login.fh-campuswien.ac.at/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.fh-campuswien.ac.at/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://login.fh-campuswien.ac.at/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.fh-campuswien.ac.at/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">FH Campus Wien - Verein zur Förderung des Fachhochschul-, Entwicklungs- und Forschungszentrums im Süden Wiens</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">FH Campus Wien - Verein zur Förderung des Fachhochschul-, Entwicklungs- und Forschungszentrums im Süden Wiens</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">FH Campus Wien</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">FH Campus Wien - University of Applied Sciences</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">https://www.fh-campuswien.ac.at/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">https://www.fh-campuswien.ac.at/en/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>FH-Portal</md:GivenName>
+      <md:SurName>Helpdesk</md:SurName>
+      <md:EmailAddress>mailto:portal@fh-campuswien.ac.at</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Shibboleth</md:GivenName>
+      <md:SurName>Admin</md:SurName>
+      <md:EmailAddress>mailto:shibboleth@fh-campuswien.ac.at</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor entityID="https://dl.acm.org/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2016-05-17T11:56:00Z"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">ACM Digital Library</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">ACM Digital Library</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Volltexte aller je von der ACM veröffentlichten Artikel, Bibliographische Daten großer Verlage im Bereich "computing".</mdui:Description>
+          <mdui:Description xml:lang="en">Full text of every article ever published by ACM and bibliographic citations from major publishers in computing.</mdui:Description>
+          <mdui:InformationURL xml:lang="en">https://dl.acm.org/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">http://www.acm.org/about/privacy-policy</mdui:PrivacyStatementURL>
+          <mdui:Logo width="263" height="63">https://dl.acm.org/images/ACMDL_Logo.jpg</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDBDCCAeygAwIBAgIJAMD4xoKFh5MoMA0GCSqGSIb3DQEBBQUAMBUxEzARBgNV
+BAMTCmRsLmFjbS5vcmcwHhcNMTMwNzEwMTY0NjQ5WhcNMjMwNzA4MTY0NjQ5WjAV
+MRMwEQYDVQQDEwpkbC5hY20ub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA0D83ObCYMf9mChQ1RcwAIdUcWcrfRu/xEAamnUi6XtiP5zpq2XZsP6kr
+8kDKyf1cFb61AG76LyCNpPXUjOSImtCggfO3wwjrM6cVxoLxpjNHwyekf7Qp5Xht
+wQ76ME2mBZyyeeQGQADSpuiQU8ceEEuFVzE4odvsYjslUf5FdyB7DV3wHsaem0GI
+NPHMgm1aWw06Rb6TJT4+q7UVldkbFGToX/MwX6BVVn36TMllUCoPI9uC6elBtSDA
+pM5IX3xPGm+HWhzWMwNH6DbiEaWunL0mT4qz4S/8chofFCYnfBIghcIR2byi/LVq
+JsimhFLkh5pzeaN481jUXqm4CzVMsQIDAQABo1cwVTA0BgNVHREELTArggpkbC5h
+Y20ub3Jnhh1odHRwczovL2RsLmFjbS5vcmcvc2hpYmJvbGV0aDAdBgNVHQ4EFgQU
+Ff2/iHzhnXS3ru+f8m3ffW6LB2YwDQYJKoZIhvcNAQEFBQADggEBAL3G7h2JsWau
+Ug3rrbbyGlfnyj7m9c02h7liJw0ZWMSZAQADzPcaTXxjJd72e1bfVlsqoyix1yjt
+DOOd0PzgT4OmUrAu7CLnKIA2488s1TwrJgCkSKKfKYNAiAkTxbzlsJXb13Tok+vK
+C/sxD92ba9DO8uc/uqO8m874uHyE1o4aAn1L5AsWuDI7hdv1hMfktODq7rV1FTCT
+WUzSvfdP6GjtLivq3zW8+NluIu9EMSIYx/OUl13pXUjDiHl5oWO7MJoc5c6lu6Tu
+TVBr4ywIEShumuXNtgDlBgb41BHr7tqsLwbuAMbWH1ZWYFSz0AKVFkVxsmIjgWn1
+bYwfJV8VaIg=</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dl.acm.org/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://dl.acm.org/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://dl.acm.org/Shibboleth.sso/SAML2/ECP" index="3"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">ACM Digital Library</md:ServiceName>
+        <md:ServiceName xml:lang="en">ACM Digital Library</md:ServiceName>
+        <md:ServiceDescription xml:lang="de">Volltexte aller je von der ACM veröffentlichten Artikel, Bibliographische Daten großer Verlage im Bereich "computing".</md:ServiceDescription>
+        <md:ServiceDescription xml:lang="en">Full text of every article ever published by ACM and bibliographic citations from major publishers in computing.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true">
+          <saml:AttributeValue>urn:mace:dir:entitlement:common-lib-terms</saml:AttributeValue>
+        </md:RequestedAttribute>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Association for Computing Machinery</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">ACM Association for Computing Machinery</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.acm.org/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Adam</md:GivenName>
+      <md:SurName>Greenberg</md:SurName>
+      <md:EmailAddress>mailto:greenberg@hq.acm.org</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Adam</md:GivenName>
+      <md:SurName>Greenberg</md:SurName>
+      <md:EmailAddress>mailto:greenberg@hq.acm.org</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://cas.manz.at/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2015-04-22T23:14:34Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps/20140606</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://cas.manz.at/Shibboleth.sso/Login"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://cas.manz.at/Shibboleth.sso/Login" index="1"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">RDB Rechtsdatenbank</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">RDB Rechtsdatenbank</mdui:DisplayName>
+          <mdui:Description xml:lang="de">In der RDB Rechtsdatenbank stehen Kunden aus juristischen Fachbereichen (Rechtsanwälte, Richter, Notare, Jus-Studierende u.a.) alle maßgeblichen juristischen Fachzeitschriften, Entscheidungssammlungen, Kommentare und Handbücher namhafter österreichischer Verlage zur Online-Recherche zur Verfügung.</mdui:Description>
+          <mdui:Description xml:lang="en">A large online database by MANZ Verlag which supplies its customers (eg. lawyers, judges, notaries, law students) with legal content like legal texts, journals, collections of verdicts, commentaries and literature on legal subjects. The content derives from MANZ Verlag and other well known publishing houses.</mdui:Description>
+          <mdui:InformationURL xml:lang="de">http://rdb.at/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="de">https://cas.manz.at/shib_pp.html</mdui:PrivacyStatementURL>
+          <mdui:Logo width="500" height="80">https://cas.manz.at/images/rdbmanz.png</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIDCTCCAfGgAwIBAgIJAPsrJ30064onMA0GCSqGSIb3DQEBBQUAMCExHzAdBgNV
+BAMTFmNhczAxLmxpdmUubWFuei5pbnRlcm4wHhcNMTUwNDE2MTMyNzM1WhcNMjUw
+NDEzMTMyNzM1WjAhMR8wHQYDVQQDExZjYXMwMS5saXZlLm1hbnouaW50ZXJuMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm+RGfGD/Dx2LDovMNrx3orZD
+Pryb+xVdKkvtDvj6SxdZI+EJM58fPxU6NEyieinf2YAsBiO6i/AsgISZ6rQGAteN
+EukiK/tRdTnqBYljQl0gDWBvQzAotCDbL6xjvluTfmiwW7Pc7UQCg+8opnv5jz3r
+dH8nrR9dVahMhsHwAS8/THxRZe4Yl5+LdAbMObWkthh0/xPMwgUuOJwMkRXdDRQo
+W40hJ4xPD+mwXpnldhcABTvMQy8YS8EncZlU2DM0HhdKABq/4Gnr/vXosq/RXXe8
+VXSNZkRV2GWKd0IHnj6+sRozc9zDyHTIfvvSbJftRov0L5EIVzZ2gQdnAXkkVQID
+AQABo0QwQjAhBgNVHREEGjAYghZjYXMwMS5saXZlLm1hbnouaW50ZXJuMB0GA1Ud
+DgQWBBR0D1yYnhK42kxtbLOQZj8V5M5aBjANBgkqhkiG9w0BAQUFAAOCAQEANyFa
+PSnsGPSDWdH54vV1MBHQGOqou6vK/szAdPW5Ro6RaF5ruXLwRmnVscrtAnlYtW3/
+Kj+whgzFkhSdbL0Hg6FRlF19mwNd3SeFhNkeCK6YCni5DViao0JL/mYZAVIIg01p
+aBRlwl1z+Wp51iObBgCKNb3WgESdfztwK+09uQmMLL8nnBvwAuDzVBhh5IjajSRn
+6SB5proi9i/ZCkojAsy0Gp84hwvivpbhMa1KX0nF3nDbuWr+yZS9iLKy/6qQu8uJ
+2rerqycgd1nN19KGdp9wAB+SyW24q4AYhZ4Wc0tqAuC2y9o2ioH75q6XiL7x6v/f
+XjrRR1+ddWyFtShdPQ==</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://cas.manz.at/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://cas.manz.at/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://cas.manz.at/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://cas.manz.at/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://cas.manz.at/Shibboleth.sso/SLO/Artifact"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://cas.manz.at/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://cas.manz.at/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://cas.manz.at/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://cas.manz.at/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">RDB Rechtsdatenbank</md:ServiceName>
+        <md:ServiceName xml:lang="en">RDB Rechtsdatenbank</md:ServiceName>
+        <md:ServiceDescription xml:lang="de">In der RDB Rechtsdatenbank stehen Kunden aus juristischen Fachbereichen (Rechtsanwälte, Richter, Notare, Jus-Studenten u.a.) alle maßgeblichen juristische Fachzeitschriften, Entscheidungssammlungen, Kommentare und Handbücher namhafter österreichischer Verlage zur Online-Recherche zur Verfügung.</md:ServiceDescription>
+        <md:ServiceDescription xml:lang="en">A large online database by MANZ Verlag which supplies their customers (eg. lawyers, judges, notaries, law students) with legal content like legal texts, journals, collections of verdicts, commentaries and literature on legal subjects. The content derives from MANZ Verlag and other well known publishing houses.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="schacPersonalUniqueCode" Name="urn:oid:1.3.6.1.4.1.25178.1.2.14" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="schacHomeOrganization" Name="urn:oid:1.3.6.1.4.1.25178.1.2.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>https://rdb.manz.at/student/remote-access</saml:AttributeValue>
+          <saml:AttributeValue>https://rdb.manz.at/fellow/remote-access</saml:AttributeValue>
+        </md:RequestedAttribute>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">Manz'sche Verlags- und Universitätsbuchhandlung GmbH</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">MANZ</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.manz.at/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Stefan</md:GivenName>
+      <md:SurName>Kopetzky</md:SurName>
+      <md:EmailAddress>mailto:stefan.kopetzky@manz.at</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://filesender.aco.net/saml">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2012-09-14T16:41:34Z"/>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://filesender.aco.net/Shibboleth.sso/Login"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://filesender.aco.net/Shibboleth.sso/Login" index="1"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">ACOnet Filesender</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">ACOnet Filesender</mdui:DisplayName>
+          <mdui:Description xml:lang="de">ACOnet FileSender ist ein web-basiertes Werkzeug, um anderen Personen große Dateien zugänglich zu machen. Melden Sie sich über Ihre Institution an, um Dateien hochzuladen oder anderen Personen die Möglichkeit zu geben, Ihnen eine Datei zu schicken.</mdui:Description>
+          <mdui:Description xml:lang="en">ACOnet FileSender is a web-based tool for the transmission of large files between identified individuals. Log in via your institution to upload files or invite people to send you a file.</mdui:Description>
+          <mdui:InformationURL xml:lang="de">http://www.aco.net/filesender.html?L=0</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="en">http://www.aco.net/filesender.html?L=1</mdui:InformationURL>
+          <mdui:Logo width="195" height="94">https://www.aco.net/fileadmin/aconet/Logos/aconetlogo.gif</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIDlzCCAn+gAwIBAgIJAMD/Rc/t96EsMA0GCSqGSIb3DQEBBQUAMDsxCzAJBgNVBAYTAkFUMQ8wDQYDVQQKEwZBQ09uZXQxGzAZBgNVBAMTEmZpbGVzZW5kZXIuYWNvLm5ldDAeFw0xMjA5MTQxMzQxMjFaFw0yMjA5MTQxMzQxMjFaMDsxCzAJBgNVBAYTAkFUMQ8wDQYDVQQKEwZBQ09uZXQxGzAZBgNVBAMTEmZpbGVzZW5kZXIuYWNvLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALG5KMAUtjIMmpMNIUWIdpwD4r5rZ1j/10FUKwt3AysLp2m1pxiJNkB1dQAbzl3/ssgMPkQyyasvyXWS5I0eqLibFgJgechlnvD9M+e2xdDIXRzcnNlccnbd0PXPFsSsBnQAMM1Bya+8I6GqmCao2FKDNzegNdoJEHjZGSKGDnrwh4maLRNUtFAIVNprmaWucxtRoCFTlRPcM0l4u3G1o5vUbs/HYCvyy0PVWU+FV7yUGWbg9IVKdyc9Ejmf/2nk8HVqTlVJO+cR4sZ6gXiti87rADzRQ12ZRp8pti/NiPKLJjl5V3hvMOheQS9YCcrZvu53YbNGSASOoKuy7W8lohECAwEAAaOBnTCBmjAdBgNVHQ4EFgQUpxf5y7nUgucx/vfrva6zOjhAdsswawYDVR0jBGQwYoAUpxf5y7nUgucx/vfrva6zOjhAdsuhP6Q9MDsxCzAJBgNVBAYTAkFUMQ8wDQYDVQQKEwZBQ09uZXQxGzAZBgNVBAMTEmZpbGVzZW5kZXIuYWNvLm5ldIIJAMD/Rc/t96EsMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEBAHxUmBhtivbsfy3zM46WcDgnn9wUTsm+gE6yWBRmJ2hHD7EgAump4YtbvoMEMFm2govjGs7xf4LlPQq0QSH7axXcjU/TC8THd1zHUhwZy57A0d2Im6Vz+YR611cjfaqxnz6auTZgHApv38sf/IeKHzyvCu4oVJKWbzF4jJPgxHJy2D29QSg5oLG3avlE1btiXQ4sWGe0NmzszURZLO0GAcg9BcNOJsdiVF6XbCKAK8qNl/EKIVwBho2/JGhNtYI3HTqytCpGlCjPcayMTbTGOyC2MkV3LtFbqovVSnO9BOfKnVF7JxwuDDMO+EOv2fTodHZ2MHuMKYi6LtbD7drdIsc=</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://filesender.aco.net/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://filesender.aco.net/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://filesender.aco.net/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://filesender.aco.net/Shibboleth.sso/SLO/Artifact"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://filesender.aco.net/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://filesender.aco.net/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://filesender.aco.net/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://filesender.aco.net/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">ACOnet Filesender</md:ServiceName>
+        <md:ServiceName xml:lang="en">ACOnet Filesender</md:ServiceName>
+        <md:ServiceDescription xml:lang="de">ACOnet FileSender ist ein web-basiertes Werkzeug, um anderen Personen große Dateien zugänglich zu machen. Melden Sie sich über Ihre Institution an, um Dateien hochzuladen oder anderen Personen die Möglichkeit zu geben, Ihnen eine Datei zu schicken.</md:ServiceDescription>
+        <md:ServiceDescription xml:lang="en">ACOnet FileSender is a web-based tool for the transmission of large files between identified individuals. Log in via your institution to upload files or invite people to send you a file.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="displayName" Name="urn:oid:2.16.840.1.113730.3.1.241" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">ACOnet</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">ACOnet</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">ACOnet</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">ACOnet</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.aco.net/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.aco.net/?L=1</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>ACOnet</md:GivenName>
+      <md:SurName>Team</md:SurName>
+      <md:EmailAddress>mailto:eduid@aco.net</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>ACOnet</md:GivenName>
+      <md:SurName>Team</md:SurName>
+      <md:EmailAddress>mailto:filesender@aco.net</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://e5.onthehub.com">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2012-05-08T17:41:05Z"/>
+    </md:Extensions>
+    <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://e5.onthehub.com/WebStore/Security/Shibboleth/ACOnet/Shibboleth.sso/WAYF/ACOnet" index="1"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">e-academy/Kivuto OnTheHub</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">e-academy/Kivuto OnTheHub</mdui:DisplayName>
+          <mdui:Description xml:lang="en">OnTheHub is geared exclusively to those within the academic community, offering substantial deals on software.</mdui:Description>
+          <mdui:InformationURL xml:lang="en">http://kivuto.com/students-parents-faculty-staff</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">http://kivuto.com/privacy-policy</mdui:PrivacyStatementURL>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIDDTCCAfWgAwIBAgIJAKbfgH7m+qqbMA0GCSqGSIb3DQEBBQUAMBoxGDAWBgNV
+BAMTD2U1Lm9udGhlaHViLmNvbTAeFw0xMzAyMTQxNjU2MjJaFw0yMzAyMTIxNjU2
+MjJaMBoxGDAWBgNVBAMTD2U1Lm9udGhlaHViLmNvbTCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAMPdcbl3hSq/42be9Xa5j7utNC0Ul1yS4JGLq4nEOP00
+VKMpzHAPTVZyc4h/vffPvVo0sEJ8s6qpcb9dnPZpKj4S2Jg5tWBtmJaZw6TsyOn0
+CHLox9NCwxS8Zz6DIRfuVY2ra+X8a5FR45voE80yeuB6AXH6hfOt81a6EYYAcCe2
+C8PocbRBBabRttUC8mMlcwBd22zO3k9guOJtpfMnCrBrl777h4g9zecLkVcdKwMB
+kmiGRxxYsCNeJUV5rVp6dwbVxPCnktRfavF43Fs8F7W11XKUoa4oS+BONM7IXtz5
+BirkXphcFit7KOFpeXENIXs2AKBwfcp5AvYZy6M6BX8CAwEAAaNWMFQwMwYDVR0R
+BCwwKoIPZTUub250aGVodWIuY29thhdodHRwczovL2U1Lm9udGhlaHViLmNvbTAd
+BgNVHQ4EFgQU5L1EIH24QVlXj4VDtjBocWPsrXEwDQYJKoZIhvcNAQEFBQADggEB
+AGAqH+9sP0Msq8iAj4AZv/TUHziUzCqwNQtfjKSHRkuT1mM5y7M78CVfdPpMYdCc
+kcnYDc3O2S8lliPcTKSrnEE24gPonVxoALCgdLf+oWaA+1BP1T66HDuXkM7NOuH5
+wySxOT3jXmNxymoGsVrT4f2k5Zt9+JCiLIiEJDXzqpJ+6H9k39YBtnUR+EooQr9m
+27vpFCFJWdvxCaRAJzB6ALkdtepu6GAn2ZR+jlJKB2ZheIFcEpuxphtbqFNc37S0
+/RHXXZ7eJ4LIqg7QHc+bvhjPRwx74BajIntgwn5YbOyYWvBU2rEYS41bdNo/6p4S
+tsXRh8I9G2b+om6fhCjEUmM=
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIDDTCCAfWgAwIBAgIJAKbfgH7m+qqbMA0GCSqGSIb3DQEBBQUAMBoxGDAWBgNV
+BAMTD2U1Lm9udGhlaHViLmNvbTAeFw0xMzAyMTQxNjU2MjJaFw0yMzAyMTIxNjU2
+MjJaMBoxGDAWBgNVBAMTD2U1Lm9udGhlaHViLmNvbTCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAMPdcbl3hSq/42be9Xa5j7utNC0Ul1yS4JGLq4nEOP00
+VKMpzHAPTVZyc4h/vffPvVo0sEJ8s6qpcb9dnPZpKj4S2Jg5tWBtmJaZw6TsyOn0
+CHLox9NCwxS8Zz6DIRfuVY2ra+X8a5FR45voE80yeuB6AXH6hfOt81a6EYYAcCe2
+C8PocbRBBabRttUC8mMlcwBd22zO3k9guOJtpfMnCrBrl777h4g9zecLkVcdKwMB
+kmiGRxxYsCNeJUV5rVp6dwbVxPCnktRfavF43Fs8F7W11XKUoa4oS+BONM7IXtz5
+BirkXphcFit7KOFpeXENIXs2AKBwfcp5AvYZy6M6BX8CAwEAAaNWMFQwMwYDVR0R
+BCwwKoIPZTUub250aGVodWIuY29thhdodHRwczovL2U1Lm9udGhlaHViLmNvbTAd
+BgNVHQ4EFgQU5L1EIH24QVlXj4VDtjBocWPsrXEwDQYJKoZIhvcNAQEFBQADggEB
+AGAqH+9sP0Msq8iAj4AZv/TUHziUzCqwNQtfjKSHRkuT1mM5y7M78CVfdPpMYdCc
+kcnYDc3O2S8lliPcTKSrnEE24gPonVxoALCgdLf+oWaA+1BP1T66HDuXkM7NOuH5
+wySxOT3jXmNxymoGsVrT4f2k5Zt9+JCiLIiEJDXzqpJ+6H9k39YBtnUR+EooQr9m
+27vpFCFJWdvxCaRAJzB6ALkdtepu6GAn2ZR+jlJKB2ZheIFcEpuxphtbqFNc37S0
+/RHXXZ7eJ4LIqg7QHc+bvhjPRwx74BajIntgwn5YbOyYWvBU2rEYS41bdNo/6p4S
+tsXRh8I9G2b+om6fhCjEUmM=
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://e5.onthehub.com/WebStore/Security/Shibboleth/ACOnet/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://e5.onthehub.com/WebStore/Security/Shibboleth/ACOnet/Shibboleth.sso/SLO/Artifact"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://e5.onthehub.com/WebStore/Security/Shibboleth/ACOnet/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://e5.onthehub.com/WebStore/Security/Shibboleth/ACOnet/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://e5.onthehub.com/WebStore/Security/Shibboleth/ACOnet/Shibboleth.sso/SLO/SOAP"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://e5.onthehub.com/WebStore/Security/Shibboleth/ACOnet/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://e5.onthehub.com/WebStore/Security/Shibboleth/ACOnet/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://e5.onthehub.com/WebStore/Security/Shibboleth/ACOnet/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://e5.onthehub.com/WebStore/Security/Shibboleth/ACOnet/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">e-academy/OnTheHub</md:ServiceName>
+        <md:ServiceName xml:lang="en">e-academy/OnTheHub</md:ServiceName>
+        <md:ServiceDescription xml:lang="en">OnTheHub is geared exclusively to those within the academic community, offering substantial deals on software.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Kivuto Solutions Inc.</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">e-academy/Kivuto</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://kivuto.com/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Islam</md:GivenName>
+      <md:SurName>Gomaa</md:SurName>
+      <md:EmailAddress>mailto:igomaa@kivuto.com</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://dcluster.tugraz.at/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2013-01-21T15:01:24Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps/20140606</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://dcluster.tugraz.at/Shibboleth.sso/Login"/>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://dcluster.tugraz.at/Shibboleth.sso/DS"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://dcluster.tugraz.at/Shibboleth.sso/DS" index="1"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">dcluster.tugraz.at</mdui:DisplayName>
+          <mdui:Description xml:lang="de">HPC-System IBM Dataplex Server für TUGraz und KFU</mdui:Description>
+          <mdui:InformationURL xml:lang="de">http://hpc.tugraz.at/</mdui:InformationURL>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIC3zCCAcegAwIBAgIJAIVGRP1TFmKoMA0GCSqGSIb3DQEBBQUAMBMxETAPBgNV
+BAMTCGRjbHVzdGVyMB4XDTEyMTEyOTEwMjEwOVoXDTIyMTEyNzEwMjEwOVowEzER
+MA8GA1UEAxMIZGNsdXN0ZXIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQCqW8h36BbedULD9RP39jpfa86KmsTMx7BZfIjHXCwDhN5fsECrkhRyOAbuW4Pb
+cvqZ599amBEkdj3GFGlP3t9565J9IW5flkepUsal9asqx58y69SX2mHR58DF9Zj8
+Bw957JvbKbLOBC9FvVg46tz7EWcZQ1pL7Z+XjstTx5GhMH/ZsnGBx4MDXIXWx6Mc
+kS4kN/PtLiYElyJCAIjtwlAuALDxkTJJW7l6dv7JbRHS7d8DwoeFvC3WXN2NGQSR
+vh2AQc0fOIrGUHBQOBZeDDGXe7QMkUI2Mwwj/ZKvYo9agfYFjAQ+RCShj5GwvfuD
+69FgDdIDDWUPwm7S1GEP2TEBAgMBAAGjNjA0MBMGA1UdEQQMMAqCCGRjbHVzdGVy
+MB0GA1UdDgQWBBTwcavMJWbC50EYE2ccHv2kSREQ6zANBgkqhkiG9w0BAQUFAAOC
+AQEAa161/RtIakHvvRingX9tTf69tOvjIG5CniJXiTxL2XFB+aaTu21v2560T2PL
+YoGqCLaUKLUNMWh/pZKfTC111Koe214iG5a5QydH8/mJ3MBW8KRPOCHtC40Xxn2I
+33D0nVrEB2KONuWFlsrvVHOYreMNgcHuB2oky+wwjE5APV6BjCaAcg/NphrXko4S
+8fhGRj14LH1qzuZZwEdk401xvU0obTn8ADfW6pzw4Q0ql+U+qnqJOGrC0vadSL0Q
+hjQc7miYolVu03fdFwve+5dg3X/BsZ8EHWwlp+rnDvpA+DRR7Zq6BwaotxIePpAV
+Jk2pJ83O80oKN41rpOBbsHqw+g==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://dcluster.tugraz.at/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://dcluster.tugraz.at/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://dcluster.tugraz.at/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dcluster.tugraz.at/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://dcluster.tugraz.at/Shibboleth.sso/SLO/Artifact"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://dcluster.tugraz.at/Shibboleth.sso/NIM/SOAP"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://dcluster.tugraz.at/Shibboleth.sso/NIM/Redirect"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dcluster.tugraz.at/Shibboleth.sso/NIM/POST"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://dcluster.tugraz.at/Shibboleth.sso/NIM/Artifact"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dcluster.tugraz.at/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://dcluster.tugraz.at/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://dcluster.tugraz.at/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://dcluster.tugraz.at/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="de">dcluster.tugraz.at</md:ServiceName>
+        <md:ServiceName xml:lang="en">dcluster.tugraz.at</md:ServiceName>
+        <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="uid" Name="urn:oid:0.9.2342.19200300.100.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="schacHomeOrganization" Name="urn:oid:1.3.6.1.4.1.25178.1.2.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="telephoneNumber" Name="urn:oid:2.5.4.20" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">Technische Universität Graz</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">Graz University of Technology</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">Technische Universität Graz</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">Graz University of Technology</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.tugraz.at/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Linux Team</md:GivenName>
+      <md:SurName>ZID</md:SurName>
+      <md:EmailAddress>mailto:linux@tugraz.at</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Linux Team</md:GivenName>
+      <md:SurName>ZID</md:SurName>
+      <md:EmailAddress>mailto:linux@tugraz.at</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <md:EntityDescriptor entityID="https://xploreuat.ieee.org/shibboleth-sp">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2010-11-08T16:09:40Z"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">IEEE Xplore Digital Library (Test)</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">IEEE Xplore Digital Library (Test)</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Test instance of the IEEE Xplore digital library.</mdui:Description>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIICtjCCAZ6gAwIBAgIEVsyNnDANBgkqhkiG9w0BAQUFADAdMRswGQYDVQQDExJ4cGxvcmV1YXQu
+aWVlZS5vcmcwHhcNMTYwMjIzMTY0OTMyWhcNMTkwMjIyMTY0OTMyWjAdMRswGQYDVQQDExJ4cGxv
+cmV1YXQuaWVlZS5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDFhXTJKxXkfxee
+93evSYI28z6x7gwkpzCQ+G4ygvFP1pPk50AP+fA/hVYOBpET7XahWhmdxAfkby5iVzxsSL77V50k
+Ktv4O/VRBaY/JffugK7Kuvvc7Ud61ebjDkCp3TnQn2CdFHKT0lwwnlzgDWJdrjTTjTZ/wi9dwJG3
+tP7lkia/wolgufTK20g+0Hux9IpFnFmoZWBBQJVf1fmYhiecfjHGI637GJmkdElsXCqj5rMeVO2u
+n2og9qra+2l/o2bXcP+hi1k+k4adwyx8LpNMYghduSV8Hi9urM2z46CA49H+IDLgoKqFL9Lblybl
+nmxaCQ7H5IYr+iiTaraVLi3xAgMBAAEwDQYJKoZIhvcNAQEFBQADggEBAL5XNnBvh1g8SZHuxszd
+/XdzD5xDOt3zJhy5VsQcpunLKgyS7EBvJ6GVyVl2omcnHU7Q+/zsMa9hGO3S/pb9YJteVr2OfHLG
+yxGUnfwCNBDeSHvqgAOQW/VgxIF8XsOuUA926EdssRQXYje0LJUzp9zytSjzUEPj4wWcdmx6RZoS
+M4Y2dsvskadpc7DgL1/RirwZiZhiQN2z61EvaxqNIGobmWbK8DjnqyQK/swdzHArRrMHuxOzEjHK
++MHJxwGK4JKsvXtPmt7mVqmeS0xTZWDR/6n9LdvjGn4NMmd/v+sgtDJ/CFMjHH2TfTdOxm1UF4xA
+r2MU/z23zT9ijrE6Er4=</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://xploreuat.ieee.org/Shibboleth/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://xploreuat.ieee.org/Shibboleth/Shibboleth.sso/SAML2/POST-SimpleSign" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://xploreuat.ieee.org/Shibboleth/Shibboleth.sso/SAML2/Artifact" index="4"/>
+      <md:AttributeConsumingService index="0">
+        <md:ServiceName xml:lang="en">IEEE Xplore Digital Library (Test)</md:ServiceName>
+        <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true">
+          <saml:AttributeValue>urn:mace:dir:entitlement:common-lib-terms</saml:AttributeValue>
+        </md:RequestedAttribute>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Institute of Electrical and Electronics Engineers</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">IEEE Institute of Electrical and Electronics Engineers</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://xploreuat.ieee.org/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Shankar</md:GivenName>
+      <md:SurName>Kodavanti</md:SurName>
+      <md:EmailAddress>mailto:s.kodavanti@ieee.org</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+</md:EntitiesDescriptor>
